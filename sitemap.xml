@@ -3,54 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.lombokfoss.com/artikel/</loc>
+    <loc>https://bellabeen.github.io/artikel/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.lombokfoss.com/categories/</loc>
-    <lastmod>2019-07-25T13:26:24+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lombokfoss.com/</loc>
+    <loc>https://bellabeen.github.io/categories/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.lombokfoss.com/post/</loc>
+    <loc>https://bellabeen.github.io/post/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.lombokfoss.com/tags/</loc>
+    <loc>https://bellabeen.github.io/tags/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.lombokfoss.com/categories/category1/</loc>
+    <loc>https://bellabeen.github.io/categories/absurd/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.lombokfoss.com/categories/category2/</loc>
+    <loc>https://bellabeen.github.io/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.lombokfoss.com/tags/tag1/</loc>
-    <lastmod>2019-07-25T13:26:24+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lombokfoss.com/tags/tag2/</loc>
+    <loc>https://bellabeen.github.io/tags/tag1/</loc>
     <lastmod>2019-07-25T13:26:24+07:00</lastmod>
     <priority>0</priority>
   </url>

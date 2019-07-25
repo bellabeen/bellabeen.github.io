@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Lombokfoss</title>
-    <link>https://www.lombokfoss.com/tags/</link>
-    <description>Recent content in Tags on Lombokfoss</description>
+    <title>Tags on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/</link>
+    <description>Recent content in Tags on bellabeen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Jul 2019 13:26:24 +0700</lastBuildDate>
     
-	<atom:link href="https://www.lombokfoss.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bellabeen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>tag1</title>
-      <link>https://www.lombokfoss.com/tags/tag1/</link>
+      <link>https://bellabeen.github.io/tags/tag1/</link>
       <pubDate>Thu, 25 Jul 2019 13:26:24 +0700</pubDate>
       
-      <guid>https://www.lombokfoss.com/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>https://www.lombokfoss.com/tags/tag2/</link>
-      <pubDate>Thu, 25 Jul 2019 13:26:24 +0700</pubDate>
-      
-      <guid>https://www.lombokfoss.com/tags/tag2/</guid>
+      <guid>https://bellabeen.github.io/tags/tag1/</guid>
       <description></description>
     </item>
     
