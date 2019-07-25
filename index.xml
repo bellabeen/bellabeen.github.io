@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bellabeen</title>
-    <link>https://bellabeen.github.io/</link>
-    <description>Recent content on bellabeen</description>
+    <title>Lombokfoss</title>
+    <link>https://www.lombokfoss.com/</link>
+    <description>Recent content on Lombokfoss</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Jul 2019 13:26:24 +0700</lastBuildDate>
     
-	<atom:link href="https://bellabeen.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.lombokfoss.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Artikel</title>
-      <link>https://bellabeen.github.io/artikel/</link>
+      <link>https://www.lombokfoss.com/artikel/</link>
       <pubDate>Thu, 25 Jul 2019 13:26:24 +0700</pubDate>
       
-      <guid>https://bellabeen.github.io/artikel/</guid>
+      <guid>https://www.lombokfoss.com/artikel/</guid>
       <description>Hi ini artikel pertama saya di Hugo</description>
     </item>
     
