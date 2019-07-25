@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on Lombokfoss</title>
+    <link>https://www.lombokfoss.com/tags/tag2/</link>
+    <description>Recent content in tag2 on Lombokfoss</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jul 2019 13:26:24 +0700</lastBuildDate>
+    
+	<atom:link href="https://www.lombokfoss.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Artikel</title>
+      <link>https://www.lombokfoss.com/artikel/</link>
+      <pubDate>Thu, 25 Jul 2019 13:26:24 +0700</pubDate>
+      
+      <guid>https://www.lombokfoss.com/artikel/</guid>
+      <description>Hi ini artikel pertama saya di Hugo</description>
+    </item>
+    
+  </channel>
+</rss>
