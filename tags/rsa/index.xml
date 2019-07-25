@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rsa on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/rsa/</link>
+    <description>Recent content in rsa on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 29 Sep 2018 16:31:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/rsa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[ASGamaCTF2018] RSA Basic </title>
+      <link>https://bellabeen.github.io/post/asgamactf2018-rsa-basic/</link>
+      <pubDate>Sat, 29 Sep 2018 16:31:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/asgamactf2018-rsa-basic/</guid>
+      <description>&amp;nbsp;Website diatas merupakan salah satu platform ctf yang di gunakan sebagai media pembelajaran di komunitas ASGama (Aliansi Siber Gajah Mada)&amp;nbsp;
+Kita akan sedikit share beberapa writeup soal yang udah saya kerjakan
+ 
+Kategori : Kripto
+Soal : RSA
+Diberikan file yang bisa diunduh disini
+Enc flag
+Public_key.pem
+Setelah kita download, kita mulai mencari private key nya didalam public key.pem dengan menggunakan openssl
+openssl rsa -noout -text -inform PEM -in public_key.</description>
+    </item>
+    
+  </channel>
+</rss>

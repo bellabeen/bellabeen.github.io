@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writeups on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/writeups/</link>
+    <description>Recent content in writeups on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Mar 2019 15:20:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/writeups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[writeups] Basic Pentesting 1 Vulnhub</title>
+      <link>https://bellabeen.github.io/post/writeups-basic-pentesting-1-vulnhub/</link>
+      <pubDate>Sat, 02 Mar 2019 15:20:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-basic-pentesting-1-vulnhub/</guid>
+      <description>Selamat pagi uyy
+Pada kesempatan kali ini gua akan membahas bagaimana menyelesaikan lab Basic Pentesting oleh Josiah Pierce kalian bisa download lab nya di link dibawah ini
+Name: Basic Pentesting: 1
+Date release: 8 Dec 2017 Author: Josiah Pierce
+Series: Basic Pentesting&amp;nbsp;Series
+Scan menggunakan netdiscover untuk mendapatkan ip dari target
+
+&amp;nbsp;Kita assumsikan ip nya 192.168.48.130
+Setelah mendapat ip dari target lalu kita scan menggunakan nmap&amp;nbsp;
+sudo nmap -A -sS -Pn -vvv&amp;nbsp; -sV 192.</description>
+    </item>
+    
+    <item>
+      <title>[writeups] Pentest Hacking Sistem Windows XP Service Pack 1, 2 dan 3</title>
+      <link>https://bellabeen.github.io/post/writeups-pentest-hacking-sistem-windows-xp-service-pack-1-2-dan-3/</link>
+      <pubDate>Sun, 16 Dec 2018 05:31:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-pentest-hacking-sistem-windows-xp-service-pack-1-2-dan-3/</guid>
+      <description>&amp;nbsp; 
+Pada kesempatan kali ini saya akan memberikan tutorial bagaimana pentest terhadap target Windows XP Service Pack 1 , 2 , dan 3
+Yang pertama harus kita lakukan adalah information gathering terhadap target. Disini kami menggunakan tools yang bernama netdiscover untuk menemukan kira kira yang mana merupakan IP dari Lab tersebut
+sudo netdiscover -i vboxnet0
+
+Kita berasumsi bahwa ip dari target adalah 192.168.56.101 lalu kita korek lagi informasi dari target untuk lebih dalam menggunakan nmap</description>
+    </item>
+    
+    <item>
+      <title>[writeups] RitSecCTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-ritsecctf-2018/</link>
+      <pubDate>Mon, 19 Nov 2018 07:58:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-ritsecctf-2018/</guid>
+      <description>&amp;nbsp;Kompetisi yang berakhir beberapa saat yang lalu, disini saya hanya solved beberapa saja untuk challenge nya, perlu di improve lagi kemampuan nyaKategori Web
+Space Force (100)
+The Space Force has created a portal for the public to learn about and be in awe of our most elite Space Force Fighters. Check it out at fun.ritsec.club:8005!
+Solved 
+Didapatkan link menuju fun.ritsec.club:8005
+
+Disitu tidak ada apa apa ya hanya tampilan kosong saja, tapi saya iseng mengisi dengan kalimat The Javelin Lalu muncul lah teks dialog tersebutKarena iseng lagi saya coba menggunakan query SQL &#39;-&#39; didapatkan lah hasil seperti dibawahDan kita dapat Flag nya RITSEC{hey_there_h4v3_s0me_point$_3ny2Lx}p { margin-bottom: 0.</description>
+    </item>
+    
+    <item>
+      <title>[ASGamaCTF2018] Kimi No Nawa </title>
+      <link>https://bellabeen.github.io/post/asgamactf2018-kimi-no-nawa/</link>
+      <pubDate>Sat, 29 Sep 2018 17:54:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/asgamactf2018-kimi-no-nawa/</guid>
+      <description>Kategori : Web
+Soal&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; : Kimi No Nawa
+Hint&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; :Hint
+Url soal&amp;nbsp; : ctf.asgama.web.id:40110
+Tampilan awal hanya seperti ini&amp;nbsp;
+
+Kita lihat hint nya
+
+Saya simpulkan bahwa web tersebut punya vuln pada RCE command
+Kita bisa menggunakan command &amp;amp;ls&amp;nbsp;
+Lalu &amp;amp;cat FLAG
+&amp;nbsp;&amp;nbsp;Flag GamaCTF{Serem_G4nz_Ada_H3kel}&amp;nbsp; &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>[ASGamaCTF2018] 1byte ROXy ?</title>
+      <link>https://bellabeen.github.io/post/asgamactf2018-1byte-roxy-/</link>
+      <pubDate>Sat, 29 Sep 2018 17:28:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/asgamactf2018-1byte-roxy-/</guid>
+      <description>Kategori : Kripto
+Soal : 1byte ROXy ?
+Diberikan hasil enkripsi xor e7c1cdc1e3f4e6dbcfcec5ffc2d9d4c5ffd8cfd2d29f9fdd
+Disini kita harus bruteforce hasil enkripsi tersebut agar mendapatkan flag
+Kita gunakan script python
+import sys
+import base64
+a = &amp;ldquo;e7c1cdc1e3f4e6dbcfcec5ffc2d9d4c5ffd8cfd2d29f9fdd&amp;rdquo;
+b1 = a.decode(&amp;ldquo;hex&amp;rdquo;)
+for a in range (1,256):
+&amp;nbsp;&amp;nbsp;&amp;nbsp; for b in b1:
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;c = ord(b)
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;d = c^a
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;sys.stdout.write(chr(d))
+&amp;nbsp;&amp;nbsp;&amp;nbsp; print &amp;ldquo; Kunci &amp;ldquo;+str(a)+&amp;rdquo;\n&amp;rdquo; &amp;nbsp;Pada line 160 didapatkan flag</description>
+    </item>
+    
+    <item>
+      <title>[ASGamaCTF2018] RSA Basic </title>
+      <link>https://bellabeen.github.io/post/asgamactf2018-rsa-basic/</link>
+      <pubDate>Sat, 29 Sep 2018 16:31:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/asgamactf2018-rsa-basic/</guid>
+      <description>&amp;nbsp;Website diatas merupakan salah satu platform ctf yang di gunakan sebagai media pembelajaran di komunitas ASGama (Aliansi Siber Gajah Mada)&amp;nbsp;
+Kita akan sedikit share beberapa writeup soal yang udah saya kerjakan
+ 
+Kategori : Kripto
+Soal : RSA
+Diberikan file yang bisa diunduh disini
+Enc flag
+Public_key.pem
+Setelah kita download, kita mulai mencari private key nya didalam public key.pem dengan menggunakan openssl
+openssl rsa -noout -text -inform PEM -in public_key.</description>
+    </item>
+    
+    <item>
+      <title>[writeups] Cyber Jawara 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-cyber-jawara-2018/</link>
+      <pubDate>Sun, 16 Sep 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-cyber-jawara-2018/</guid>
+      <description>Beberapa hari yang lalu telah berlangsung tahap penyisihan untuk Kompetisi Cyber Jawara 2018
+Karena banyak anggota team yang berhalangan mengerjakan ,jadi cuman saya sendiri yang ngerjain :D
+Semoga bermanfaat&amp;nbsp;Kategori MISCEmoclew (50)Problem : }!5r3kc4h_3m0cl3w{8102JC :galFSolvedKita gunakan script python dibawah iniprint &amp;lsquo;}!5r3kc4h_3m0cl3w{8102JC :galF&amp;rsquo; [::-1]
+
+
+Di dapatkan flag nya Flag: CJ2018{w3lc0m3_h4ck3r5!}
+Bonus 1 (50)Problem :Terima kasih telah mengikuti Cyber Jawara. Mohon maaf atas kekurangan yang terjadi. Soal bisa didownload disinihttps://ctf.jawara.idsirtii.or.id/files/b1659ba281a4efeb4cb35cb3be2a351a/bonus1.jpgSolved :Kita gunakan perintah strings bonus1.</description>
+    </item>
+    
+    <item>
+      <title>[writeups] noxCTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-noxctf-2018/</link>
+      <pubDate>Sat, 08 Sep 2018 16:33:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-noxctf-2018/</guid>
+      <description>Tepat tadi malam telah berakhir nya competition noxCTF di https://ctf18.noxale.com/ daftar kemarin siang jam 1 an cuman ngerjain 2 soal heheheMendingan kita langsung liat bagaimana sih writeup nya
+Soal bisa diakses disini https://ctf18.noxale.com/challenges
+Chop Suey 
+Today I ate in a Chinese restaurant and got myself a fortune cookie. These things usually contain a note with a nice sentence or phrase, but mine had numbers in it instead! Can you help me find the meaning of the numbers?</description>
+    </item>
+    
+    <item>
+      <title>[LCTF] Writeups CIat Ciat</title>
+      <link>https://bellabeen.github.io/post/lctf-writeups-ciat-ciat/</link>
+      <pubDate>Sun, 20 May 2018 16:17:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/lctf-writeups-ciat-ciat/</guid>
+      <description>Writeups simple work on the problem from LCTF {Lappung_CTF} Ciat Ciat.png
+Given image file
+The cave is confused what to do
+Here only use utilities on linux that is strings
+With a very bombastic command strings ciat-ciat.png
+&amp;nbsp;
+
+Gotcha
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; LCTF {l1h4t_5tr1ng5_b1ar_p4n4s}
+Lots of writeups LCTF Event next time cave update, so stay tune</description>
+    </item>
+    
+    <item>
+      <title>[writeups] ANGSTROM CTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</link>
+      <pubDate>Sun, 01 Apr 2018 07:57:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</guid>
+      <description>&amp;nbsp;Pada tanggal 16 - 22 Maret 2018 telah berlangsung kompetisi CTF yang berada di website http://angstromctf.com. Pada saat itu kami berhasil menyelesaikan beberapa soal yang telah kami solved berikut beberapa soal dan write ups nya1.Warm Up (10)    Soal Diberikan website&amp;nbsp; yang mengarah ke link https://angstromctf.com/static/crypto/warm_up/ciphertext.txt
+Pada file tersebut terdapat file yang berisi myjd{ij_fkwizq}. Kita buka web cryptii.com. Pertama kita gunakan Caesar Chiper ,tapi tidak mendapatkan apa apa, Maka pada clue nya yaitu A very Fine cipher,kita ganti menjadi Affine Cipher maka kita decode hasil cipher tadi menggunakan Affine Chiper dengan Slope A 71 Intercept B 45 maka Wala mendapatkan flag nya actf{it_begins}</description>
+    </item>
+    
+  </channel>
+</rss>

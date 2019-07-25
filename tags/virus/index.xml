@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virus on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/virus/</link>
+    <description>Recent content in Virus on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 27 Oct 2017 23:20:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/virus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ransomware Kelinci Buruk</title>
+      <link>https://bellabeen.github.io/post/ransomware-kelinci-buruk/</link>
+      <pubDate>Fri, 27 Oct 2017 23:20:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/ransomware-kelinci-buruk/</guid>
+      <description>Sebuah worm ransomware baru yang tersebar luas, yang dikenal sebagai &#34;Bad Rabbit,&#34; yang menyerang lebih dari 200 organisasi besar, terutama di Rusia dan Ukraina minggu ini memanfaatkan sebuah eksploitasi NSA yang dicuri yang dikeluarkan oleh Broker Bayangan April ini untuk menyebar ke jaringan korban.
+Sebelumnya dilaporkan bahwa wabah kripto-ransomware minggu ini tidak menggunakan eksploitasi yang dikembangkan oleh Badan Keamanan Nasional, baik EternalRomance maupun EternalBlue, namun sebuah laporan terbaru dari Cisco Talos Security Intelligence mengungkapkan bahwa ransomware Bad Rabbit memang menggunakan eksploitasi EternalRomance.</description>
+    </item>
+    
+  </channel>
+</rss>

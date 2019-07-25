@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apa sih itu ekstensi dan Softswitch</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<meta itemprop="name" content="Apa sih itu ekstensi dan Softswitch">
+<meta itemprop="description" content="Normal 0     false false false  EN-US X-NONE X-NONE                TOPOLOGI
+Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja
+Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP
+Daripada bingung mending kita baca bareng bareng">
+
+
+<meta itemprop="datePublished" content="2017-10-30T07:41:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-30T07:41:00&#43;00:00" />
+<meta itemprop="wordCount" content="528">
+
+
+
+<meta itemprop="keywords" content="Info,Networking,Internet," />
+
+
+<meta property="og:title" content="Apa sih itu ekstensi dan Softswitch" />
+<meta property="og:description" content="Normal 0     false false false  EN-US X-NONE X-NONE                TOPOLOGI
+Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja
+Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP
+Daripada bingung mending kita baca bareng bareng" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/apa-sih-itu-ekstensi-dan-softswitch/" />
+<meta property="article:published_time" content="2017-10-30T07:41:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-30T07:41:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apa sih itu ekstensi dan Softswitch"/>
+<meta name="twitter:description" content="Normal 0     false false false  EN-US X-NONE X-NONE                TOPOLOGI
+Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja
+Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP
+Daripada bingung mending kita baca bareng bareng"/>
+
+
+
+
+<link rel="icon" href="/img/logo.svg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/prism.css" />
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-80517197-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<meta itemprop="name" content="Apa sih itu ekstensi dan Softswitch">
+<meta itemprop="description" content="Normal 0     false false false  EN-US X-NONE X-NONE                TOPOLOGI
+Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja
+Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP
+Daripada bingung mending kita baca bareng bareng">
+
+
+<meta itemprop="datePublished" content="2017-10-30T07:41:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-10-30T07:41:00&#43;00:00" />
+<meta itemprop="wordCount" content="528">
+
+
+
+<meta itemprop="keywords" content="Info,Networking,Internet," />
+
+
+<meta property="og:title" content="Apa sih itu ekstensi dan Softswitch" />
+<meta property="og:description" content="Normal 0     false false false  EN-US X-NONE X-NONE                TOPOLOGI
+Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja
+Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP
+Daripada bingung mending kita baca bareng bareng" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/apa-sih-itu-ekstensi-dan-softswitch/" />
+<meta property="article:published_time" content="2017-10-30T07:41:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-30T07:41:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apa sih itu ekstensi dan Softswitch"/>
+<meta name="twitter:description" content="Normal 0     false false false  EN-US X-NONE X-NONE                TOPOLOGI
+Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja
+Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP
+Daripada bingung mending kita baca bareng bareng"/>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+    
+            <a class="navbar-brand" href="https://bellabeen.github.io"><img src="/img/logo.svg" width="30" height="30" class="d-inline-block align-top rounded-circle"
+                alt=""> bellabeen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://bellabeen.github.io">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://www.google.co.id" id="cse-search-box">
+                    <input type="hidden" name="cx" value="partner-pub-6279325630224392:9670052267" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="sa" value="search" />
+                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Kata Kunci" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+        <header>
+    <div class="jumbotron jumbotron-fluid bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Catatan Belajar dan Timbunan Ilmu</h1>
+                    <p class="lead">Try It Harder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-8 mb-5 card">
+                    <article>
+                        <div class="">
+                           <div class="card-body p-md-5">
+                                
+                               <div class="post-header mb-5">
+                                    
+                                    <div class="mb-3">
+                                        <img src="https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg" class="rounded-circle" width="32" height="32" />
+                                        <a href="https://twitter.com/ardiantapargo">Muhammad Bella Buay Nunyai</a> | <time>30-10-2017</time>
+                                    </div>
+
+                                    <h2 class="card-title mb-3">Apa sih itu ekstensi dan Softswitch</h2>
+                                    
+                                    <div>
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/info">Info</a>
+                                        </span> 
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/networking">Networking</a>
+                                        </span> 
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/internet">Internet</a>
+                                        </span> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="post-content">
+                                    <div class="tr_bq"><!--[if gte mso 9]><xml> <w:WordDocument>  <w:View>Normal</w:View>  <w:Zoom>0</w:Zoom>  <w:TrackMoves/>  <w:TrackFormatting/>  <w:PunctuationKerning/>  <w:ValidateAgainstSchemas/>  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>  <w:DoNotPromoteQF/>  <w:LidThemeOther>EN-US</w:LidThemeOther>  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>  <w:Compatibility>   <w:BreakWrappedTables/>   <w:SnapToGridInCell/>   <w:WrapTextWithPunct/>   <w:UseAsianBreakRules/>   <w:DontGrowAutofit/>   <w:SplitPgBreakAndParaMark/>   <w:DontVertAlignCellWithSp/>   <w:DontBreakConstrainedForcedTables/>   <w:DontVertAlignInTxbx/>   <w:Word11KerningPairs/>   <w:CachedColBalance/>  </w:Compatibility>  <m:mathPr>   <m:mathFont m:val="Cambria Math"/>   <m:brkBin m:val="before"/>   <m:brkBinSub m:val="--"/>   <m:smallFrac m:val="off"/>   <m:dispDef/>   <m:lMargin m:val="0"/>   <m:rMargin m:val="0"/>   <m:defJc m:val="centerGroup"/>   <m:wrapIndent m:val="1440"/>   <m:intLim m:val="subSup"/>   <m:naryLim m:val="undOvr"/>  </m:mathPr></w:WordDocument></xml><![endif]--></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="https://2.bp.blogspot.com/-R-QvDRLYhWo/Wfc56MkC7KI/AAAAAAAAKT0/wlDZ4Z_MxaAXhULwvNuGl1J5jjxF5ifjgCLcBGAs/s1600/softswitch-bn.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" data-original-height="259" data-original-width="600" height="138" src="https://2.bp.blogspot.com/-R-QvDRLYhWo/Wfc56MkC7KI/AAAAAAAAKT0/wlDZ4Z_MxaAXhULwvNuGl1J5jjxF5ifjgCLcBGAs/s320/softswitch-bn.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">TOPOLOGI</td></tr></tbody></table><br /><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Keingetan pas pkl nih gan ,pas pkl disuruh setting VOIP cuman ya ribet walaupun secara topologi mudah dipahami hanya saja kita butuh sedikit memahami saja</span><br /><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Mungkin kali ini ane mau berbagi pengetahuan aja tentang bagian dari Topologi VOIP</span><br /><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Daripada bingung mending kita baca bareng bareng </span><br /><div class="MsoNoSpacing"><br /></div><blockquote class="tr_bq"><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"><b>EXTENSION </b></span></div></blockquote><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Extension di definisikan sebagai sekumpulan perintah untuk dijalankan.&nbsp;Perintah-perintah ini biasanya di jalankan berdasarkan urutan dari tingkat prioritasnya.</span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">Dalam sintax yang digunakan di file extensions.conf , setiap tahapan perintah dalam sebuah extension di tulis dalam format exten = extension,priority,Command(parameter) Kesimpulannya, sebuah "context" mempunyai nama, seperti "john". Setiap context, kita dapat mendefinisikan satu atau lebih "extension". Setiap extension, kita dapat mendefinisikan sekumpulan perintah. </span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">Komponen yang membangun tahapan perintah extension atau command line adalah sebagai berikut, </span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"></span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l1 level1 lfo1; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">1.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">Extension adalah label dari extension, dapat berupa sebuah string (angka, huruf dan simbol yan diijinkan) atau pola yang harus di evaluasi secara dinamik untuk mencocokan dengan banyak kemungkinan nomor telepon. Setiap command line yang menjadi bagian dari extension tertentu harus mempunyai label yang sama. </span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"></span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l1 level1 lfo1; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">2.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">Priority biasanya berupa angka integer. Merupakan urutan dari perintah yang harus dijalankan dalam sebuah extension. Perintah pertama yang akan dijalankan harus dimulai dengan prioritas 1, jika tidak ada prioritas 1 maka Asterisk tidak akan menjalankan perintah extension. Setelah &nbsp;prioritas 1 di jalankan, Asterisk akan menambah prioritas ke prioritas 2 dan seterusnya, tentunya jika tidak ada perintah yang menentukan prioritas mana yang selanjutnya harus dijalankan. Jika ternyata perintah selanjutnya ternyata tidak terdefinisi maka Asterisk akan menghentikan proses menjalankan perintah walaupun masih ada perintah dengan prioritas yang lebih tinggi. </span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"></span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l1 level1 lfo1; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">3.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">Command atau perintah adalah "aplikasi" yang akan di jalankan oleh Asterisk. </span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"></span></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">&nbsp; </span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"></span></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l1 level1 lfo1; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">4.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-language: IN; mso-themecolor: text1;">Parameter adalah parameter yang harus diberikan kepada sebuah command. Tidak semua command / perintah membutuhkan parameter, &nbsp;beberapa perintah dapat dijalankan tanpa parameter.</span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;"></span></div><div class="MsoNoSpacing"><br /></div><div style="text-align: left;"><blockquote><blockquote class="tr_bq"><div class="MsoNoSpacing"><span style="font-size: small;"><b><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">SOFTSWITCH</span></b></span></div></blockquote></blockquote></div><div align="center" class="MsoNoSpacing" style="text-align: center;"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Softswitch adalah suatu alat yang mampu menghubungkan antara jaringan sirkuit dengan jaringan paket, termasuk di dalamnya adalah jaringan telpon tetap </span><a href="http://mata-cyber.blogspot.com/" target="_blank"><i><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">(PSTN)</span></i></a><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">, internet yang berbasis IP, kabel TV dan juga jaringan seluler yang telah ada selama ini. Softswitch dikembangkan oleh <i>International Softswitch Consortium </i>(ISC). ISC mendefinisikan softswitch sebagai arsitektur terbuka dan terdistribusi yang memungkinkan jaringan mendukung layanan suara, data, dan multimedia dari perangkat pelanggan ke jaringan inti dan mendukung interworking jaringan dengan aplikasi yang dapat menyediakan kombinasi layanan suara, data dan multimedia tersebut.&nbsp;</span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Softswitch lahir dari pengembangan teknologi jaringan data yang kini telah mendominasi. Pengembangan ini merupakan migrasi dari jaringan PSTN menuju NGN (Next Generation Network) yang berbasis data. Layanan telekomunikasi pada NGN (Next Generation Network) meliputi voice, data, dan multimedia. Pada kenyataannya, bagi industri jasa telekomunikasi bahwa volume trafik data melebihi volume trafik voice, namun layanan voice masih merupakan penyumbang pendapatan terbesar dalam bisnis <b>telekomunikasi</b>. Dengan Demikian pengembangan layanan voice pada jaringan data menjadi aspek penting dalam perkembangan <b>telekomunikasi</b>.</span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-bidi-font-weight: bold; mso-themecolor: text1;">Softswitch lebih dikenal sebagai<b> IP-PBX</b></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">. Perangkat perangkat dalam sofswitch yaitu :</span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l0 level1 lfo2; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">1.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Media Gateway&nbsp; Controller<i> (MGC)</i>yang sering disebut dengan <u>perangkat call agent</u></span></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l0 level1 lfo2; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">2.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Aplication / fitur server</span></div><div class="MsoNoSpacing" style="margin-left: 36.0pt; mso-list: l0 level1 lfo2; text-indent: -18.0pt;"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-themecolor: text1;"><span style="mso-list: Ignore;">3.<span style="font: 7.0pt &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Media server</span></div><div class="MsoNoSpacing" style="margin-left: 36.0pt;"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Selain memiliki berbagai perangkat, Softswitch juga memiliki kapasitas yaitu <u>harus mampu trafik panggilan minimal 4 juta BHC dan dapat pula ditambah kapsitasnya sesuai kebutuhan</u>. Kapasitas sistem ini juga harus didesain secara modular.</span></div><div class="MsoNoSpacing"><br /></div><div class="MsoNoSpacing"><span style="color: black; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; font-size: 12.0pt; mso-themecolor: text1;">Bisa kebayangkan gimana ribet nya jaman dulu saat ada panggilan yang masuk,tapi sekarang jaman now yang serba canggih !! </span></div>
+
+                                </div>
+                                <div class="post-footer">
+                                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'bellabeen';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                       <aside>
+    <div class="widget">
+        <a href="http://projects.id/petani_kode" target="_blank">
+        <img src="http://lorempixel.com/360/250" alt="Proyek Petani Kode"/>
+        </a>
+    </div> 
+</aside>
+                    </div>
+            </div>
+        </div>
+
+        <footer class="border border-bottom-0 border-left-0 border-right-0">
+    <div class="container pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="row">
+            <div class="col">
+
+                &copy; 2019 <a href="https://bellabeen.github.io">bellabeen</a> | Template by <a href="https://www.petanikode.com" target="blank">Petani Kode</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+        <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/prism.js"></script>
+    </body>
+</html>

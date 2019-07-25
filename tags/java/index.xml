@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/java/</link>
+    <description>Recent content in Java on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 16 Nov 2018 16:36:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[java] Cara Koneksi Java Netbean Dengan Database MySQL</title>
+      <link>https://bellabeen.github.io/post/java-cara-koneksi-java-netbean-dengan-database-mysql/</link>
+      <pubDate>Fri, 16 Nov 2018 16:36:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-cara-koneksi-java-netbean-dengan-database-mysql/</guid>
+      <description>bn-techno
+Pada kesempatan kali ini gua akan memberikan codingan untuk mengkoneksikan program java netbean dengan database. Disini saya menggunakan MySQL untuk database nya
+Emang gak bisa make Oracle Maria DB dll? Bisa, tapi sekarang saya hanya menggunakan database MySQL
+Gimana sih cara nya?
+Buat file baru dengan nama koneksi.java
+Lalu tambahkan library mysql dengan klik kanan pada file koneksi.java lalu add library mysql 
+//Connect DB
+import java.sql.Connection;
+import java.sql.DriverManager;</description>
+    </item>
+    
+    <item>
+      <title>[java] Program Sederhana Implementasi Polymorphism, Overload, Overriding di Java</title>
+      <link>https://bellabeen.github.io/post/java-program-sederhana-implementasi-polymorphism-overload-overriding-di-java/</link>
+      <pubDate>Mon, 12 Nov 2018 14:48:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-program-sederhana-implementasi-polymorphism-overload-overriding-di-java/</guid>
+      <description>bn-techno.com
+Pada kesempatan kali ini saya akan memberikan contoh codingan untuk penerapan dari metodelogi polimorphism, overloading dan override pada Java
+Dengan Studi Kasus mencari nilai tertinggi dari inputan 3 bilangan, daripada bingung mending kita langsung saja buat codingan nya
+Buat terlebih dahulu project baru di netbean nya, dengan new project Polymorphism
+Overload
+Pastikan kalian membuat file .java dengan nama overload.java lalu buat codingan nya seperti dibawah ini
+package polymorphism;
+public class Overload {</description>
+    </item>
+    
+    <item>
+      <title>[java] Program sederhana Compare Nilai di Java</title>
+      <link>https://bellabeen.github.io/post/java-program-sederhana-compare-nilai-di-java/</link>
+      <pubDate>Wed, 07 Nov 2018 05:54:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-program-sederhana-compare-nilai-di-java/</guid>
+      <description>Ini merupakan contoh program sederhana yang berfungsi untuk mengcompare atau membandingkan 2 buah bilangan yang akan menanyakan hasil nya dan benar atau salah dari jawaban kita tersebut, disini saya menggunakan bahasa java,editor sublime dalam pengerjaan nya dan operation sistem Backbox Linux
+import java.util.Scanner;
+public class comparasi_nilai{
+&amp;nbsp;&amp;nbsp;&amp;nbsp; //Methode Main
+public static void main(String[] args) {
+&amp;nbsp;&amp;nbsp;&amp;nbsp; Scanner input = new Scanner (System.in);
+&amp;nbsp;&amp;nbsp;&amp;nbsp; int bil1, bil2;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; int operasi, pertanyaan;</description>
+    </item>
+    
+    <item>
+      <title>[java] Program Konversi Hexa Desimal Octa Java</title>
+      <link>https://bellabeen.github.io/post/java-program-konversi-hexa-desimal-octa-java/</link>
+      <pubDate>Wed, 07 Nov 2018 05:48:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-program-konversi-hexa-desimal-octa-java/</guid>
+      <description>Program sederhana konversi bilangan Hexa Desimal Octa pada pemerograman java
+import java.util.Scanner;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; public class KonversiHexadesimal {&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; public static void main(String[] args) {&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Scanner input = new Scanner(System.in);&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; /** Membuat prompt untuk memasukkan hexadesimal */ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; System.out.print(&amp;ldquo;Masukkan angka hexadesimal: &amp;ldquo;);&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; /** Input hexadesimal adalah dalam bentuk String */ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; String hexadecimal = input.nextLine();&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; /** Menampilkan nilai desimal setelah dikonversi dari hexadesimal&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; dengan memanggil method konversiHexadecimal&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; nilai yang diinput bisa berupa lowercase atau uppercase&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; namun semuanya diubah menjadi uppercase menggunakan .</description>
+    </item>
+    
+    <item>
+      <title>[java] Program Sederhana Berat Masa Index Java Netbean</title>
+      <link>https://bellabeen.github.io/post/java-program-sederhana-berat-masa-index-java-netbean/</link>
+      <pubDate>Fri, 14 Sep 2018 18:55:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-program-sederhana-berat-masa-index-java-netbean/</guid>
+      <description>Kalian tau tentang BIM? Yaps BIM adalah Berat Massa Index yaitu korelasi yang mengukur antara berat dan tinggi badan seseorang, apakah ideal atau tidak
+Kita bisa menggunakan java untuk mengukur nya dengan persyaratan
+BMI &amp;lt; 18,5 itu Kurus18,5 &amp;lt;= BMI &amp;lt;= 25.0 Normal25,0 &amp;lt;= BMI &amp;lt;= 30,0 Terlalu berlebih30,0 &amp;lt;= ObesitasDari pada banyak bingung kira kira bagaimana sih program nya?
+Kita lihat source code nya
+package beratmasaindex;
+import java.util.Scanner;</description>
+    </item>
+    
+    <item>
+      <title>[java] Program True Or False Perbandingan Nilai di Java</title>
+      <link>https://bellabeen.github.io/post/java-program-true-or-false-perbandingan-nilai-di-java/</link>
+      <pubDate>Tue, 11 Sep 2018 06:50:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-program-true-or-false-perbandingan-nilai-di-java/</guid>
+      <description>Selamat semua nya disini gua akan memberikan tau kan sebuah program sederhana pada java bagaimana sih program tersebut membandingkan suatu nilai true or false dari suatu operasi penjumlahan sederhana
+Oke kita langsung saja cek bagaimana sih cara buat nya
+Pastikan JDK dan JRE sudah terinstall di pc kalian , kalau belum bisa baca postingan iniBuka editor IDE sesuai selera bisa netbean, sublime,notepad, nano, vim, pico dll&amp;nbsp;Lalu ketikan program dibawah iniimport java.</description>
+    </item>
+    
+    <item>
+      <title>[java] Program Konversi Suhu Sederhana Java</title>
+      <link>https://bellabeen.github.io/post/java-program-konversi-suhu-sederhana-java/</link>
+      <pubDate>Thu, 06 Sep 2018 05:35:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/java-program-konversi-suhu-sederhana-java/</guid>
+      <description>Hallo semua nya pada kesempatan kali ini gua akan memberikan sedikit contoh program sederhana bagaimana sih kita bisa mengkonversi suhu dengan bahasa java
+Daripada banyak banyak, mending kita lihat contoh codingan nya
+EditorBuka editor kesukaan kalian mulai dari notepad, sublime, geany, dll
+CompilerPastikan kalian sudah menginstall Java JDK nya ya :), kalau belum bisa cek di postingan sebelum nya disini
+Codinganimport java.util.Scanner;
+class fahrenheit_ke_celcius{
+&amp;nbsp;&amp;nbsp;&amp;nbsp; public static void main(String[] args) {</description>
+    </item>
+    
+    <item>
+      <title>[tutorial] Install Netbeans on Backbox Linux</title>
+      <link>https://bellabeen.github.io/post/tutorial-install-netbeans-on-backbox-linux/</link>
+      <pubDate>Sun, 02 Sep 2018 07:40:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/tutorial-install-netbeans-on-backbox-linux/</guid>
+      <description>bellabeen
+Hallo guyss , setelah kemarin kalian sudah melihat bagaimana cara menginstall Java JDK di Linux nahhhh sekarang gua bakalan ngasih tau nih bagaimana cara nya menginstall IDE Netbeans di Backbox Linux
+Kok kenapa harus Backbox sih kak? Kenapa gak Ubuntu, Debian atau linux lainnya?
+Yaaaa karena gua user BackBox Linux :p
+Daripada terlalu lama mendingan cussss
+Cek Version Java&amp;nbsp;Dengan perintah
+javac -versionDownload Netbeanscd /tmp &amp;amp;&amp;amp; wget -c http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh&amp;nbsp;Tunggu hingga download nya selesai</description>
+    </item>
+    
+    <item>
+      <title>[tutorial] Install Java JDK/JRE 8/9 di Backbox Linux</title>
+      <link>https://bellabeen.github.io/post/tutorial-install-java-jdkjre-89-di-backbox-linux/</link>
+      <pubDate>Thu, 30 Aug 2018 19:28:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/tutorial-install-java-jdkjre-89-di-backbox-linux/</guid>
+      <description>Java-bellabeen
+Hallo selamat pagi semua nya pada kesempatan kali ini gua akan memberikan tutorial menginstall Java JDK 8&amp;frasl;9&amp;nbsp; di Backbox Linux, karena documentasi pada website oracle.com masih kurang jelas. Saya berinisiatif untuk menginstall via apt-get&amp;nbsp;
+Daripada banyak cincong mending kita langsung aja install
+ 
+Instalasi Default Java JDK/JRE
+Pertama kita update terlebih dahulu backbox linux nya sudo apt-get updateLalu install JRE (Java Runtime Environment)
+sudo apt-get install default-jreLalu install JDK (Java Development Kit)</description>
+    </item>
+    
+  </channel>
+</rss>

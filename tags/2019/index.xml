@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/2019/</link>
+    <description>Recent content in 2019 on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Apr 2018 04:57:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/2019/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Error message &#39;sudo: unable to resolve host &#39; on backbox, ubuntu, debian etc</title>
+      <link>https://bellabeen.github.io/post/error-message-sudo-unable-to-resolve-host-on-backbox-ubuntu-debian-etc/</link>
+      <pubDate>Wed, 04 Apr 2018 04:57:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/error-message-sudo-unable-to-resolve-host-on-backbox-ubuntu-debian-etc/</guid>
+      <description>In a few days ago when after installing linux backbox on personal pc happened a strange error
+code error
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Error message &amp;lsquo;sudo: unable to resolve host &amp;lt;USER&amp;gt;&amp;lsquo;After the analysis on the day before I changed the name of hostname on my linux, because it replace the hostname error occurs on my linux when accessing the root. There is a difference between hostname and hosts on my linux
+We make sure the names on the hostname and host happen in common</description>
+    </item>
+    
+    <item>
+      <title>[writeups] ANGSTROM CTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</link>
+      <pubDate>Sun, 01 Apr 2018 07:57:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</guid>
+      <description>&amp;nbsp;Pada tanggal 16 - 22 Maret 2018 telah berlangsung kompetisi CTF yang berada di website http://angstromctf.com. Pada saat itu kami berhasil menyelesaikan beberapa soal yang telah kami solved berikut beberapa soal dan write ups nya1.Warm Up (10)    Soal Diberikan website&amp;nbsp; yang mengarah ke link https://angstromctf.com/static/crypto/warm_up/ciphertext.txt
+Pada file tersebut terdapat file yang berisi myjd{ij_fkwizq}. Kita buka web cryptii.com. Pertama kita gunakan Caesar Chiper ,tapi tidak mendapatkan apa apa, Maka pada clue nya yaitu A very Fine cipher,kita ganti menjadi Affine Cipher maka kita decode hasil cipher tadi menggunakan Affine Chiper dengan Slope A 71 Intercept B 45 maka Wala mendapatkan flag nya actf{it_begins}</description>
+    </item>
+    
+  </channel>
+</rss>

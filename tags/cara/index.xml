@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cara on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/cara/</link>
+    <description>Recent content in Cara on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 Apr 2018 07:03:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/cara/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[tutorial] Cara Mengubah Hostname di Linux Debian, Xubuntu, DLL</title>
+      <link>https://bellabeen.github.io/post/tutorial-cara-mengubah-hostname-di-linux-debian-xubuntu-dll/</link>
+      <pubDate>Mon, 02 Apr 2018 07:03:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/tutorial-cara-mengubah-hostname-di-linux-debian-xubuntu-dll/</guid>
+      <description>Hostname adalah nama komputer, yang mana ketika kita menginstall linux kita diminta untuk memasukkan nama komputer. Hostname muncul di terminal setelah tanda @ (@hostname)
+Ada beberapa cara mengganti nama hostname, salah satu nya menggunakan perintah linux atau melalui terminal
+Cara ini bisa diterapkan di distro debian, ubuntu, xubuntu, backbox, kali linux dan distro turunan lainnya
+APA SIH HOSTNAME di LINUX?
+Nama yang diberikan untuk sebuah komputer pada jaringan. Hostname sebagai penanda komputer pada sebuah jaringan</description>
+    </item>
+    
+  </channel>
+</rss>

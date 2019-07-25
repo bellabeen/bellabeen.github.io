@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[tutorial] Configurasi Firewall di GNS3</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<meta itemprop="name" content="[tutorial] Configurasi Firewall di GNS3">
+<meta itemprop="description" content="FIREWALL PADA GNS3Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dllDisini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumberSetting ip pada router dengan perintahip address add address=192.168.43.97&frasl;24 interface=INTERNETip address add address=192.168.2.1&frasl;24 interface=ether2Setelah ip tersetting 
+Kita masukkan firewall nya dengan perintahip firewall filter add chain=input src-address=192.168.43.97 action=acceptip firewall filter add chain=input src-address=192.168.2.2 action=drop">
+
+
+<meta itemprop="datePublished" content="2018-05-09T05:38:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-09T05:38:00&#43;00:00" />
+<meta itemprop="wordCount" content="104">
+
+
+
+<meta itemprop="keywords" content="Tutorial,GNS3," />
+
+
+<meta property="og:title" content="[tutorial] Configurasi Firewall di GNS3" />
+<meta property="og:description" content="FIREWALL PADA GNS3Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dllDisini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumberSetting ip pada router dengan perintahip address add address=192.168.43.97&frasl;24 interface=INTERNETip address add address=192.168.2.1&frasl;24 interface=ether2Setelah ip tersetting 
+Kita masukkan firewall nya dengan perintahip firewall filter add chain=input src-address=192.168.43.97 action=acceptip firewall filter add chain=input src-address=192.168.2.2 action=drop" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/tutorial-configurasi-firewall-di-gns3/" />
+<meta property="article:published_time" content="2018-05-09T05:38:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-05-09T05:38:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[tutorial] Configurasi Firewall di GNS3"/>
+<meta name="twitter:description" content="FIREWALL PADA GNS3Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dllDisini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumberSetting ip pada router dengan perintahip address add address=192.168.43.97&frasl;24 interface=INTERNETip address add address=192.168.2.1&frasl;24 interface=ether2Setelah ip tersetting 
+Kita masukkan firewall nya dengan perintahip firewall filter add chain=input src-address=192.168.43.97 action=acceptip firewall filter add chain=input src-address=192.168.2.2 action=drop"/>
+
+
+
+
+<link rel="icon" href="/img/logo.svg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/prism.css" />
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-80517197-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<meta itemprop="name" content="[tutorial] Configurasi Firewall di GNS3">
+<meta itemprop="description" content="FIREWALL PADA GNS3Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dllDisini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumberSetting ip pada router dengan perintahip address add address=192.168.43.97&frasl;24 interface=INTERNETip address add address=192.168.2.1&frasl;24 interface=ether2Setelah ip tersetting 
+Kita masukkan firewall nya dengan perintahip firewall filter add chain=input src-address=192.168.43.97 action=acceptip firewall filter add chain=input src-address=192.168.2.2 action=drop">
+
+
+<meta itemprop="datePublished" content="2018-05-09T05:38:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-09T05:38:00&#43;00:00" />
+<meta itemprop="wordCount" content="104">
+
+
+
+<meta itemprop="keywords" content="Tutorial,GNS3," />
+
+
+<meta property="og:title" content="[tutorial] Configurasi Firewall di GNS3" />
+<meta property="og:description" content="FIREWALL PADA GNS3Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dllDisini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumberSetting ip pada router dengan perintahip address add address=192.168.43.97&frasl;24 interface=INTERNETip address add address=192.168.2.1&frasl;24 interface=ether2Setelah ip tersetting 
+Kita masukkan firewall nya dengan perintahip firewall filter add chain=input src-address=192.168.43.97 action=acceptip firewall filter add chain=input src-address=192.168.2.2 action=drop" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/tutorial-configurasi-firewall-di-gns3/" />
+<meta property="article:published_time" content="2018-05-09T05:38:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-05-09T05:38:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[tutorial] Configurasi Firewall di GNS3"/>
+<meta name="twitter:description" content="FIREWALL PADA GNS3Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dllDisini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumberSetting ip pada router dengan perintahip address add address=192.168.43.97&frasl;24 interface=INTERNETip address add address=192.168.2.1&frasl;24 interface=ether2Setelah ip tersetting 
+Kita masukkan firewall nya dengan perintahip firewall filter add chain=input src-address=192.168.43.97 action=acceptip firewall filter add chain=input src-address=192.168.2.2 action=drop"/>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+    
+            <a class="navbar-brand" href="https://bellabeen.github.io"><img src="/img/logo.svg" width="30" height="30" class="d-inline-block align-top rounded-circle"
+                alt=""> bellabeen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://bellabeen.github.io">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://www.google.co.id" id="cse-search-box">
+                    <input type="hidden" name="cx" value="partner-pub-6279325630224392:9670052267" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="sa" value="search" />
+                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Kata Kunci" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+        <header>
+    <div class="jumbotron jumbotron-fluid bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Catatan Belajar dan Timbunan Ilmu</h1>
+                    <p class="lead">Try It Harder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-8 mb-5 card">
+                    <article>
+                        <div class="">
+                           <div class="card-body p-md-5">
+                                
+                               <div class="post-header mb-5">
+                                    
+                                    <div class="mb-3">
+                                        <img src="https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg" class="rounded-circle" width="32" height="32" />
+                                        <a href="https://twitter.com/ardiantapargo">Muhammad Bella Buay Nunyai</a> | <time>09-05-2018</time>
+                                    </div>
+
+                                    <h2 class="card-title mb-3">[tutorial] Configurasi Firewall di GNS3</h2>
+                                    
+                                    <div>
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/tutorial">Tutorial</a>
+                                        </span> 
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/gns3">GNS3</a>
+                                        </span> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="post-content">
+                                    <p><div align="center" style="line-height: 100%; margin-bottom: 0in;"><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-L14jdLa6ndQ/WvLrPWyxuKI/AAAAAAAAKiM/03bpY_LtbF0cx2nZCn3J8XnzbSv4uqXTQCLcBGAs/s1600/logo-colour.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="220" data-original-width="193" src="https://4.bp.blogspot.com/-L14jdLa6ndQ/WvLrPWyxuKI/AAAAAAAAKiM/03bpY_LtbF0cx2nZCn3J8XnzbSv4uqXTQCLcBGAs/s1600/logo-colour.png" /></a></div><br /><span style="font-size: medium;"><b>FIREWALL PADA GNS3</b></span></div><div align="center" style="line-height: 100%; margin-bottom: 0in;"><br /></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;">Banyak cara nya ada yang membuat firewall pada gns3 berdasarkan ip address,berdasarkan ip network, berdasarkan port , berdasarkan protokol dll</span></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;">Disini kami mendrop atau membuat firewall (memblok semua koneksi) berdasarkan ip address sumber</span></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><br /></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;">Setting ip pada router dengan perintah</span></div><div align="left" style="line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;"><b>ip address add address=192.168.43.<sup>97</sup>&frasl;<sub>24</sub> interface=INTERNET</b></span></div><div align="left" style="line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;"><b>ip address add address=192.168.2.<sup>1</sup>&frasl;<sub>24</sub> interface=ether2</b></span></div><div align="left" style="line-height: 100%; margin-bottom: 0in;"><br /></div><div align="left" style="line-height: 100%; margin-bottom: 0in;"></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-NcEU0Cj8a8o/WvLqJnRHkCI/AAAAAAAAKh0/jS78AkyEOKE-kEhCnRnr5om93QcaCLEzgCLcBGAs/s1600/1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="115" data-original-width="577" src="https://3.bp.blogspot.com/-NcEU0Cj8a8o/WvLqJnRHkCI/AAAAAAAAKh0/jS78AkyEOKE-kEhCnRnr5om93QcaCLEzgCLcBGAs/s1600/1.png" /></a></div><div class="separator" style="clear: both; text-align: center;"></div></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><br /><span style="font-size: small;">Setelah ip tersetting </span><br /><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;">Kita masukkan firewall nya dengan perintah</span></div><div align="left" style="line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;"><b>ip firewall filter add chain=input src-address=192.168.43.97 action=accept</b></span></div><div align="left" style="line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;"><b>ip firewall filter add chain=input src-address=192.168.2.2 action=drop</b></span><br /></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-FFGYP9n7O6o/WvLqJtvf95I/AAAAAAAAKh4/40ky7X-mA8kBf4o89vFjyEr-cTM9MkjdwCLcBGAs/s1600/2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="127" data-original-width="577" src="https://2.bp.blogspot.com/-FFGYP9n7O6o/WvLqJtvf95I/AAAAAAAAKh4/40ky7X-mA8kBf4o89vFjyEr-cTM9MkjdwCLcBGAs/s1600/2.png" /></a></div><br /><span style="font-size: small;">Setting ip pada pc</span><br /><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;">Dengan perintah <b>ip 192.168.2.<sup>2</sup>&frasl;<sub>24</sub> 255.255.255.0 192.168.2.1</b></span></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><span style="font-size: small;">Lalu kita coba ping ke router apa kah berhasil? Kalau timeout berarti settingan anda berhasil membuat firewall</span></div></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><br /></div><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;"><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-rGQ8O26ArzM/WvLqJg6-49I/AAAAAAAAKh8/tC3HMQYIw6wz7to38v7RYNyHJSOrccgKQCLcBGAs/s1600/3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="409" data-original-width="574" height="285" src="https://4.bp.blogspot.com/-rGQ8O26ArzM/WvLqJg6-49I/AAAAAAAAKh8/tC3HMQYIw6wz7to38v7RYNyHJSOrccgKQCLcBGAs/s400/3.png" width="400" /></a></div></div><blockquote class="tr_bq"><div align="left" style="font-weight: normal; line-height: 100%; margin-bottom: 0in;">Bisa download pdf nya disini <a href="http://hachicardinal.github.io">http://hachicardinal.github.io</a></div></blockquote><style type="text/css">p { margin-bottom: 0.1in; line-height: 120%; }</style></p>
+
+                                </div>
+                                <div class="post-footer">
+                                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'bellabeen';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                       <aside>
+    <div class="widget">
+        <a href="http://projects.id/petani_kode" target="_blank">
+        <img src="http://lorempixel.com/360/250" alt="Proyek Petani Kode"/>
+        </a>
+    </div> 
+</aside>
+                    </div>
+            </div>
+        </div>
+
+        <footer class="border border-bottom-0 border-left-0 border-right-0">
+    <div class="container pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="row">
+            <div class="col">
+
+                &copy; 2019 <a href="https://bellabeen.github.io">bellabeen</a> | Template by <a href="https://www.petanikode.com" target="blank">Petani Kode</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+        <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/prism.js"></script>
+    </body>
+</html>

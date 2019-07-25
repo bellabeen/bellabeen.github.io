@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NMAP From To Basic Tutorial</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<meta itemprop="name" content="NMAP From To Basic Tutorial">
+<meta itemprop="description" content="Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик">
+
+
+<meta itemprop="datePublished" content="2018-05-21T08:08:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-21T08:08:00&#43;00:00" />
+<meta itemprop="wordCount" content="291">
+
+
+
+<meta itemprop="keywords" content="Tutorial,Security,Networking," />
+
+
+<meta property="og:title" content="NMAP From To Basic Tutorial" />
+<meta property="og:description" content="Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/nmap-from-to-basic-tutorial/" />
+<meta property="article:published_time" content="2018-05-21T08:08:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-05-21T08:08:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NMAP From To Basic Tutorial"/>
+<meta name="twitter:description" content="Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик"/>
+
+
+
+
+<link rel="icon" href="/img/logo.svg" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/prism.css" />
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-80517197-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<meta itemprop="name" content="NMAP From To Basic Tutorial">
+<meta itemprop="description" content="Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик">
+
+
+<meta itemprop="datePublished" content="2018-05-21T08:08:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-21T08:08:00&#43;00:00" />
+<meta itemprop="wordCount" content="291">
+
+
+
+<meta itemprop="keywords" content="Tutorial,Security,Networking," />
+
+
+<meta property="og:title" content="NMAP From To Basic Tutorial" />
+<meta property="og:description" content="Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/nmap-from-to-basic-tutorial/" />
+<meta property="article:published_time" content="2018-05-21T08:08:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-05-21T08:08:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NMAP From To Basic Tutorial"/>
+<meta name="twitter:description" content="Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик"/>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+    
+            <a class="navbar-brand" href="https://bellabeen.github.io"><img src="/img/logo.svg" width="30" height="30" class="d-inline-block align-top rounded-circle"
+                alt=""> bellabeen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://bellabeen.github.io">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://www.google.co.id" id="cse-search-box">
+                    <input type="hidden" name="cx" value="partner-pub-6279325630224392:9670052267" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="sa" value="search" />
+                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Kata Kunci" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+        <header>
+    <div class="jumbotron jumbotron-fluid bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Catatan Belajar dan Timbunan Ilmu</h1>
+                    <p class="lead">Try It Harder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-8 mb-5 card">
+                    <article>
+                        <div class="">
+                           <div class="card-body p-md-5">
+                                
+                               <div class="post-header mb-5">
+                                    
+                                    <div class="mb-3">
+                                        <img src="https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg" class="rounded-circle" width="32" height="32" />
+                                        <a href="https://twitter.com/ardiantapargo">Muhammad Bella Buay Nunyai</a> | <time>21-05-2018</time>
+                                    </div>
+
+                                    <h2 class="card-title mb-3">NMAP From To Basic Tutorial</h2>
+                                    
+                                    <div>
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/tutorial">Tutorial</a>
+                                        </span> 
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/security">Security</a>
+                                        </span> 
+                                        
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="/tags/networking">Networking</a>
+                                        </span> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="post-content">
+                                    <p><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-QyCTl4DnvGU/WwF8sHVSoDI/AAAAAAAAKlM/pvH4tJqC39YnfVpPTtQbB7A2AVYt7UeHgCPcBGAYYCw/s1600/bn-techno_nmap.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="256" data-original-width="256" src="https://3.bp.blogspot.com/-QyCTl4DnvGU/WwF8sHVSoDI/AAAAAAAAKlM/pvH4tJqC39YnfVpPTtQbB7A2AVYt7UeHgCPcBGAYYCw/s1600/bn-techno_nmap.png" /></a></div><span class="" id="result_box" lang="ru" tabindex="-1"><span title="Apa kalian tau tentang NMAP?  ">Вы знаете о NMAP?<br /></span><span title="Atau ada yang sudah menggunakan nya?   ">Или кто-то уже его использует?<br /></span><span title="Pada kesempatan kali ini gua akan memberikan basic menggunakan tools nmap  ">По случаю в этот раз я буду предоставлять базовые инструменты nmap<br /></span><span title="Nmap sebuah tool open source untuk eksplorasi dan audit keamanan jaringan.">Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. </span><span title="Ia dirancang untuk memeriksa jaringan besar secara cepat, meskipun ia dapat pula bekerja terhadap host tunggal.">Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. </span><span title="Nmap menggunakan paket IP raw dalam cara yang canggih untuk menentukan host mana saja yang tersedia pada jaringan, layanan (nama aplikasi dan versi) apa yang diberikan, sistem operasi (dan versinya) apa yang digunakan, apa jenis firewall/filter paket yang digunakan, dan">Nmap  использует сложные IP-пакеты сложным способом, чтобы определить, какие  хосты доступны в сети, какая служба (имя и версия приложения)  предоставляется, какая операционная система (и версия) используется,  какой тип брандмауэра / фильтра пакетов используется и </span><span title="sejumlah karakteristik lainnya   ">ряд других характеристик<br /><br /></span><span title="Mungkin disini kalian bisa download tools nmap disini      ">Может быть, здесь вы можете скачать инструменты nmap здесь<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span title="Install Winpcap versi 2.1 atau versi yang lebih baru, yaitu WinPcap_3_0.exe     ">Установите Winpcap версии 2.1 или новее, то есть WinPcap_3_0.exe<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span title="Reboot     ">перезагружать<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span title="Download aplikasi Nmap terbaru dari www.nmap.org,     ">Загрузите последнее приложение Nmap с сайта www.nmap.org,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span title="Unzip file tersebut menggunakan Winzip atau utility dekompresi lainnya.  ">Разархивируйте файл с помощью Winzip или любой другой утилиты декомпрессии.<br /></span><span title="Ada beberapa distro linux yang sudah include tools nmap didalam nya   ">Существует несколько дистрибутивов linux, которые уже включают в себя инструменты nmap<br /><br /></span><span title="Mungkin ini beberapa basic command menggunakan nmap   ">Возможно, это базовая команда, использующая nmap<br /><br /></span><span title="1. Memeriksa port yang terbuka  ">1. Проверка открытых портов<br /></span><span title="nmap&lt;host/IP target&gt;   ">nmap &lt;host / target IP&gt;<br /></span><span title="2. Memeriksa spesifik port pada mesin target  ">2. Проверьте конкретный порт на целевой машине<br /></span><span title="nmap -p &lt;host/IP target&gt;   ">nmap -p &lt;host / target IP&gt;<br /></span><span title="3. Memeriksa service yang berjalan pada port  ">3. Проверка работы службы на порту<br /></span><span title="nmap – sV &lt;host/IP target&gt;   ">nmap - sV &lt;host / target IP&gt;<br /></span><span title="4. Memeriksa port mesin target dalam 1 segmen jaringan  ">4. Проверьте порт конечной машины в 1 сегменте сети<br /></span><span title="nmap &lt;host/IP target&gt;   ">nmap &lt;host / target IP&gt;<br /></span><span title="5. Mengidentifikasi sistem operasi mesin      ">5. Определите операционную систему машины<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span title="nmap -O &lt;host/IP target&gt;   ">nmap -O &lt;host / target IP&gt;<br /><br /></span><span title="Kita coba   ">Мы стараемся<br /><br /></span><span title="hachi@geek:~$ sudo nmap 103.3.46.23   ">hachi @ geek: ~ $ sudo nmap 103.3.46.23<br /><br /></span><span title="Starting Nmap 7.50 ( https://nmap.org ) at 2018-05-20 21:00 WIB  ">Запуск Nmap 7.50 (<a href="https://nmap.org">https://nmap.org</a>) в 2018-05-20 21:00 WIB<br /></span><span title="Nmap scan report for 103.3.46.23  ">Отчет о сканировании Nmap для 103.3.46.23<br /></span><span title="Host is up (0.061s latency).  ">Хост увеличен (0,061 с).<br /></span><span title="Not shown: 994 filtered ports  ">Не показано: 994 фильтрованных порта<br /></span><span title="PORT     STATE  SERVICE  ">ГОСУДАРСТВЕННАЯ СЕТЬ ПОРТА<br /></span><span title="21/tcp   closed ftp  ">21 / tcp закрыто ftp<br /></span><span title="22/tcp   open   ssh  ">22 / tcp open ssh<br /></span><span title="80/tcp   open   http  ">80 / tcp открыть http<br /></span><span title="1723/tcp open   pptp  ">1723 / tcp open pptp<br /></span><span title="8080/tcp open   http-proxy  ">8080 / tcp открыть http-proxy<br /></span><span title="8291/tcp open   unknown   ">8291 / tcp открыть неизвестно<br /><br /></span><span title="Nmap done: 1 IP address (1 host up) scanned in 68.42 seconds   ">Выполнено Nmap: 1 IP-адрес (1 хост вверх), отсканированный за 68,42 секунды<br /><br /></span><span title="Perintah diatas cuman mengecek port port yang terbuka saja  ">Вышеприведенная команда проверяет только открытый порт только портов<br /></span><span title="Kalau yang lain bisa di coba command diatas">Если другие могут попробовать команду выше</span><span title=""></span></span></p>
+
+                                </div>
+                                <div class="post-footer">
+                                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'bellabeen';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                       <aside>
+    <div class="widget">
+        <a href="http://projects.id/petani_kode" target="_blank">
+        <img src="http://lorempixel.com/360/250" alt="Proyek Petani Kode"/>
+        </a>
+    </div> 
+</aside>
+                    </div>
+            </div>
+        </div>
+
+        <footer class="border border-bottom-0 border-left-0 border-right-0">
+    <div class="container pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="row">
+            <div class="col">
+
+                &copy; 2019 <a href="https://bellabeen.github.io">bellabeen</a> | Template by <a href="https://www.petanikode.com" target="blank">Petani Kode</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+        <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/prism.js"></script>
+    </body>
+</html>

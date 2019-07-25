@@ -55,4 +55,1425 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>https://bellabeen.github.io/tags/tutorial/</loc>
+    <lastmod>2019-06-15T01:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/web-curd-membuat-file-koneksi-database-php-mysql/</loc>
+    <lastmod>2019-06-15T01:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/mysql/</loc>
+    <lastmod>2019-06-15T01:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/php/</loc>
+    <lastmod>2019-06-15T01:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/web/</loc>
+    <lastmod>2019-06-15T01:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/review-parrotsec-os/</loc>
+    <lastmod>2019-05-05T18:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/linux/</loc>
+    <lastmod>2019-04-06T11:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-cara-install-genymotion-di-linux-parrot-os/</loc>
+    <lastmod>2019-04-06T11:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/parrot/</loc>
+    <lastmod>2019-04-06T11:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/info/</loc>
+    <lastmod>2019-03-31T04:49:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/internet/</loc>
+    <lastmod>2019-03-31T04:49:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-google-shortlink-akhir-nya-wafat/</loc>
+    <lastmod>2019-03-31T04:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/android/</loc>
+    <lastmod>2019-03-31T03:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-instalasi-android-studio-pada-parrot-os-linux/</loc>
+    <lastmod>2019-03-31T03:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-apa-itu-net-tools-di-backbox-linux/</loc>
+    <lastmod>2019-03-24T06:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-cara-cepat-install-paket-.deb-di-parrot-os/</loc>
+    <lastmod>2019-03-24T04:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/ctf/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/writeups-basic-pentesting-1-vulnhub/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/basic-pentest/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/lab/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/pentest/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/vmware/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/vulnhub/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/writeups/</loc>
+    <lastmod>2019-03-02T15:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-trusted-platform-module-tpm-atau-module-tpm/</loc>
+    <lastmod>2019-02-14T16:08:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/security/</loc>
+    <lastmod>2019-02-14T16:08:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/1001-perintah-perintah-linux-dasar/</loc>
+    <lastmod>2019-01-04T06:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/selamat-datang-2019/</loc>
+    <lastmod>2018-12-31T06:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/backbox/</loc>
+    <lastmod>2018-12-21T06:07:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tools-support-on-backbox-linux-debian-ubuntu-etc/</loc>
+    <lastmod>2018-12-21T06:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/konfigurasi-firewall-routing-dynamic-rip-wireless-cisco-packet-tracert/</loc>
+    <lastmod>2018-12-20T07:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cpp-program-login-di-c-c-plus-plus/</loc>
+    <lastmod>2018-12-19T16:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/cpp/</loc>
+    <lastmod>2018-12-19T16:01:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/geany/</loc>
+    <lastmod>2018-12-19T16:01:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cpp-program-penentu-hasil-n-bilangan-c-c-plus-plus/</loc>
+    <lastmod>2018-12-19T15:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/writeups-pentest-hacking-sistem-windows-xp-service-pack-1-2-dan-3/</loc>
+    <lastmod>2018-12-16T05:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/windows/</loc>
+    <lastmod>2018-12-16T05:31:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-gerbang-logika-and-or-not-xor-nand-nor-xnor/</loc>
+    <lastmod>2018-12-16T04:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/programming/</loc>
+    <lastmod>2018-12-16T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cpp-cara-membuat-file-header-include-c-geany-linux/</loc>
+    <lastmod>2018-11-24T02:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cpp-program-konversi-sederhana-waktu-cc-plus-plus/</loc>
+    <lastmod>2018-11-22T01:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/writeups-ritsecctf-2018/</loc>
+    <lastmod>2018-11-19T07:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/ritsecctf/</loc>
+    <lastmod>2018-11-19T07:58:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/download/</loc>
+    <lastmod>2018-11-17T20:50:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/oracle/</loc>
+    <lastmod>2018-11-17T20:50:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/download-oracle-database-express-edition-terbaru-dan-apex-terbaru-oracle/</loc>
+    <lastmod>2018-11-17T20:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/logo-download/</loc>
+    <lastmod>2018-11-17T20:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/java/</loc>
+    <lastmod>2018-11-16T16:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-cara-koneksi-java-netbean-dengan-database-mysql/</loc>
+    <lastmod>2018-11-16T16:36:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-install-versi-oreo-di-zenfone-3-max-zc553kl-zc553tl/</loc>
+    <lastmod>2018-11-14T06:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/android-system-ui-flavor-zenfone-asus-galaxy-young/</loc>
+    <lastmod>2018-11-13T04:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-program-sederhana-implementasi-polymorphism-overload-overriding-di-java/</loc>
+    <lastmod>2018-11-12T14:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/bitcoin-cash-bch-hardfork/</loc>
+    <lastmod>2018-11-09T06:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-software-pengganti-bandicam-di-backbox-linux/</loc>
+    <lastmod>2018-11-09T05:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-apa-itu-tripware-ids-linux/</loc>
+    <lastmod>2018-11-08T06:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-firewall/</loc>
+    <lastmod>2018-11-07T14:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-apa-itu-vpn-ipsec-backbox-linux/</loc>
+    <lastmod>2018-11-07T14:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-program-sederhana-compare-nilai-di-java/</loc>
+    <lastmod>2018-11-07T05:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-program-konversi-hexa-desimal-octa-java/</loc>
+    <lastmod>2018-11-07T05:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/debian/</loc>
+    <lastmod>2018-11-04T15:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/ubuntu/</loc>
+    <lastmod>2018-11-04T15:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-konfigurasi-ftp-server-di-backbox-linux/</loc>
+    <lastmod>2018-11-04T15:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-instalasi-filezilla-di-backbox-linux/</loc>
+    <lastmod>2018-11-02T08:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-konfigurasi-file-.htaccess-di-webserver-apache/</loc>
+    <lastmod>2018-11-01T22:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-apa-itu-file-.htaccess-dan-fungsi-nya/</loc>
+    <lastmod>2018-11-01T16:38:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cpp-program-penjumlahan-n-bilangan-cpp/</loc>
+    <lastmod>2018-10-29T15:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/asdos-daftar-nilai-utp-apk-d3-mi-2018/</loc>
+    <lastmod>2018-10-28T16:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/asdos/</loc>
+    <lastmod>2018-10-28T16:12:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/info-beberapa-plugin-wajib-editor-atom/</loc>
+    <lastmod>2018-10-23T02:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-xtream-download-manager-pengganti-idm-on-linux/</loc>
+    <lastmod>2018-10-22T19:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/asgamactf2018-kimi-no-nawa/</loc>
+    <lastmod>2018-09-29T17:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/asgama2018/</loc>
+    <lastmod>2018-09-29T17:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/asgamactf/</loc>
+    <lastmod>2018-09-29T17:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/asgamactf2018-1byte-roxy-/</loc>
+    <lastmod>2018-09-29T17:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/kripto/</loc>
+    <lastmod>2018-09-29T17:28:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/2018/</loc>
+    <lastmod>2018-09-29T16:31:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/asgamactf2018-rsa-basic/</loc>
+    <lastmod>2018-09-29T16:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/rsa/</loc>
+    <lastmod>2018-09-29T16:31:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-how-to-create-a-hotspot-in-the-backbox-linux/</loc>
+    <lastmod>2018-09-18T15:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-cara-memisahkan-halaman-file-pdf-di-backbox-linux/</loc>
+    <lastmod>2018-09-18T15:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-konfigurasi-iptables-di-backbox-linux/</loc>
+    <lastmod>2018-09-17T16:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-cara-membuat-hotspot-di-backbox-linux-2018/</loc>
+    <lastmod>2018-09-17T05:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/writeups-cyber-jawara-2018/</loc>
+    <lastmod>2018-09-16T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/cyber-jawara/</loc>
+    <lastmod>2018-09-16T08:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/history/</loc>
+    <lastmod>2018-09-14T19:21:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-bubat-war-fire-triggering-java-vs-sunda-sentiment/</loc>
+    <lastmod>2018-09-14T19:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/sejarah/</loc>
+    <lastmod>2018-09-14T19:21:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-perang-bubat-pemicu-sentimen-jawa-vs-sunda/</loc>
+    <lastmod>2018-09-14T19:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-program-sederhana-berat-masa-index-java-netbean/</loc>
+    <lastmod>2018-09-14T18:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-program-true-or-false-perbandingan-nilai-di-java/</loc>
+    <lastmod>2018-09-11T06:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/kuliah-index-documentation-kuliyeah-ilmu-komputer-2017/</loc>
+    <lastmod>2018-09-11T06:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/kuliah/</loc>
+    <lastmod>2018-09-11T06:16:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/networking/</loc>
+    <lastmod>2018-09-11T00:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-how-to-install-nessus-on-backbox-linux-and-windows/</loc>
+    <lastmod>2018-09-11T00:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-daendels-musuh-besar-rusia/</loc>
+    <lastmod>2018-09-10T16:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/review-apa-sih-website-gaulidotnet/</loc>
+    <lastmod>2018-09-09T20:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/exploit/</loc>
+    <lastmod>2018-09-09T20:24:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/forensic/</loc>
+    <lastmod>2018-09-09T20:24:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/pwning/</loc>
+    <lastmod>2018-09-09T20:24:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/reverse/</loc>
+    <lastmod>2018-09-09T20:24:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/review/</loc>
+    <lastmod>2018-09-09T20:24:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%B1%D1%83%D1%80%D0%B6%D1%83%D0%B0-%D0%B4%D1%8E-%D0%BC%D0%B0%D1%80%D0%B4%D0%B8-%D0%BF%D0%BE%D1%8D%D0%B7%D0%B8%D1%8F-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8-%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD-%D1%81%D1%83%D0%BB%D0%B5%D0%B9%D0%BC%D0%B0%D0%BD-%D0%B4%D0%BB%D1%8F-%D1%85%D1%8E%D1%80%D1%80%D0%B5%D0%BC%D0%B0/</loc>
+    <lastmod>2018-09-09T01:06:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%BC%D0%B0%D1%84%D0%B8%D0%BE%D0%B7%D0%BE-%D1%81%D0%B0%D0%BC%D1%8B%D0%B9-%D0%BF%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%B6%D0%BD%D1%8B%D0%B9-%D0%B8%D1%82%D0%B0%D0%BB%D1%8C%D1%8F%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D1%80%D0%B5%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%B8%D0%BA/</loc>
+    <lastmod>2018-09-09T01:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/writeups-noxctf-2018/</loc>
+    <lastmod>2018-09-08T16:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/crypto/</loc>
+    <lastmod>2018-09-08T16:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/noxctf/</loc>
+    <lastmod>2018-09-08T16:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-mafioso-kriminal-italia-paling-bergengsi/</loc>
+    <lastmod>2018-09-08T16:11:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-bourgeois-du-mardi-puisi-cinta-sultan-suleyman-untuk-h%C3%BCrrem/</loc>
+    <lastmod>2018-09-07T15:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-how-to-setting-file-resolv.conf-on-backbox-linux/</loc>
+    <lastmod>2018-09-06T06:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/java-program-konversi-suhu-sederhana-java/</loc>
+    <lastmod>2018-09-06T05:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-install-gambas-on-backbox-linux/</loc>
+    <lastmod>2018-09-04T15:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-bacteriophage-senjata-rahasia-soviet/</loc>
+    <lastmod>2018-09-04T14:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-install-netbeans-on-backbox-linux/</loc>
+    <lastmod>2018-09-02T07:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-how-to-install-monodevelop-on-backbox-linux/</loc>
+    <lastmod>2018-09-01T22:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-install-java-jdkjre-89-di-backbox-linux/</loc>
+    <lastmod>2018-08-30T19:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/is-it-true-that-hitler-suicide-in-berlin/</loc>
+    <lastmod>2018-08-03T15:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/android-system-ui-rasa-zenfone-asus-galaxy-young/</loc>
+    <lastmod>2018-07-22T18:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/gns3/</loc>
+    <lastmod>2018-07-11T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-konfigurasi-dhcp-server-menggunakan-gns3/</loc>
+    <lastmod>2018-07-11T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-facts-about-napoleon-bonaparte/</loc>
+    <lastmod>2018-06-03T14:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/android-suggestions-minirom-tweak-kernel-and-more-galaxy-young/</loc>
+    <lastmod>2018-06-03T14:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/history-great-northern-war-the-end-of-swedens-glory-in-the-north/</loc>
+    <lastmod>2018-05-24T06:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/android-saran-minirom-tweakkernel-dan-lainnya-galaxy-young/</loc>
+    <lastmod>2018-05-22T20:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/%D0%BF%D1%80%D0%B0%D0%B2%D0%B4%D0%B0-%D0%BB%D0%B8-%D1%87%D1%82%D0%BE-%D0%B3%D0%B8%D1%82%D0%BB%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5-%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%B2-%D0%B1%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D0%B5/</loc>
+    <lastmod>2018-05-22T08:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/benarkah-hitler-bunuh-diri-di-berlin/</loc>
+    <lastmod>2018-05-22T08:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/nmap-from-to-basic-tutorial/</loc>
+    <lastmod>2018-05-21T08:08:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/lin/</loc>
+    <lastmod>2018-05-21T07:54:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-nmap-from-to-basic/</loc>
+    <lastmod>2018-05-21T07:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/lctf-writeups-ciat-ciat/</loc>
+    <lastmod>2018-05-20T16:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/lctf/</loc>
+    <lastmod>2018-05-20T16:17:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/selamat-hari-kebangkitan-nasional/</loc>
+    <lastmod>2018-05-20T15:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/sofware/</loc>
+    <lastmod>2018-05-20T15:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/download-charles-proxy-3.9.1-license-key/</loc>
+    <lastmod>2018-05-20T15:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/google-doodle-celebrates-abraham-ortelius/</loc>
+    <lastmod>2018-05-20T01:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/cisco-packet-tracert/</loc>
+    <lastmod>2018-05-10T05:52:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-konfigurasi-dhcp-server-on-cisco-packet-tracert/</loc>
+    <lastmod>2018-05-10T05:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-configurasi-firewall-di-gns3/</loc>
+    <lastmod>2018-05-09T05:38:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-konfigurasi-vlan-pada-cisco-packet-tracert/</loc>
+    <lastmod>2018-05-06T05:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/terminal/</loc>
+    <lastmod>2018-04-10T23:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-cara-menambahkan-repository-backbox-linux-v4-v5/</loc>
+    <lastmod>2018-04-10T23:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-install-atom-pada-backbox-ubuntu-debian/</loc>
+    <lastmod>2018-04-04T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/packet/</loc>
+    <lastmod>2018-04-04T17:42:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/2019/</loc>
+    <lastmod>2018-04-04T04:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/analisis/</loc>
+    <lastmod>2018-04-04T04:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/error-message-sudo-unable-to-resolve-host-on-backbox-ubuntu-debian-etc/</loc>
+    <lastmod>2018-04-04T04:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/trick/</loc>
+    <lastmod>2018-04-04T04:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/linux-error-code-unable-to-resolve-host-pada-ubuntubackbox/</loc>
+    <lastmod>2018-04-04T04:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/solved/</loc>
+    <lastmod>2018-04-04T04:48:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/tugas/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-menghubungkan-beberapa-pc-dengan-switch-di-cisco-paket-tracert/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/april/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/cisco/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/cisco-packet/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/maret/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/mei/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/tracert/</loc>
+    <lastmod>2018-04-04T04:33:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-menghubungkan-beberapa-pc-dengan-switch-di-gns-3/</loc>
+    <lastmod>2018-04-02T07:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/cara/</loc>
+    <lastmod>2018-04-02T07:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-cara-mengubah-hostname-di-linux-debian-xubuntu-dll/</loc>
+    <lastmod>2018-04-02T07:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/saran-rackikan-tweak-mini-rom-ala-nganggur.id/</loc>
+    <lastmod>2018-04-01T08:22:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/program/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/angstrom/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/angstrom-ctf/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/misc/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/soal/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/stegano/</loc>
+    <lastmod>2018-04-01T07:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-program-sederhana-penggunaan-pointer-pada-c-plus-plus-c/</loc>
+    <lastmod>2018-04-01T06:43:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/penghargaan-untuk-sang-pembuat-c-bjarne-stroustrup/</loc>
+    <lastmod>2018-01-12T14:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/kenalan-yuk-sama-linux-lite/</loc>
+    <lastmod>2018-01-07T20:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/flash-andromax-c-ad686g/</loc>
+    <lastmod>2017-12-21T18:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/tutoria/</loc>
+    <lastmod>2017-12-21T18:49:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/dracos-distro-pentest-asli-indonesia/</loc>
+    <lastmod>2017-12-21T18:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/config/</loc>
+    <lastmod>2017-11-23T01:23:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/config-http-injector-update-november-2017/</loc>
+    <lastmod>2017-11-23T01:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/software/</loc>
+    <lastmod>2017-11-23T01:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/config-http-injector-januari-2018/</loc>
+    <lastmod>2017-11-23T01:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/home/</loc>
+    <lastmod>2017-11-16T00:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/samsung-rasa-asus/</loc>
+    <lastmod>2017-11-16T00:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/rom/</loc>
+    <lastmod>2017-11-15T06:08:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/rom-minirom-touchwizux-inspired-v3/</loc>
+    <lastmod>2017-11-15T06:08:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-linux-from-scratch/</loc>
+    <lastmod>2017-11-01T15:13:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/arsitektur-dan-bagian-fungsional-softswitch/</loc>
+    <lastmod>2017-10-30T15:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-sih-itu-ekstensi-dan-softswitch/</loc>
+    <lastmod>2017-10-30T07:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/fitur-keamanan-baru-di-os-android/</loc>
+    <lastmod>2017-10-29T14:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cara-menjadi-hacker/</loc>
+    <lastmod>2017-10-29T14:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-root/</loc>
+    <lastmod>2017-10-29T08:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/dns-itu-apa/</loc>
+    <lastmod>2017-10-28T20:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cara-flash-andromax-ad686g-atau-andromax-c/</loc>
+    <lastmod>2017-10-28T20:11:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-ctf/</loc>
+    <lastmod>2017-10-28T08:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/ransomware-kelinci-buruk/</loc>
+    <lastmod>2017-10-27T23:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/virus/</loc>
+    <lastmod>2017-10-27T23:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/gerhana-matahari-di-lampung-terpantau/</loc>
+    <lastmod>2016-03-03T17:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/system-ui-zenfone-untuk-galaxy-young-s5360/</loc>
+    <lastmod>2016-02-17T19:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/definisi-seo/</loc>
+    <lastmod>2016-02-11T22:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-dns-bind9/</loc>
+    <lastmod>2015-12-23T06:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/burning-dvdcd-tanpa-software-di-windows/</loc>
+    <lastmod>2015-11-01T06:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/windows-10-so-that-data-is-not-stolen-or-spaying/</loc>
+    <lastmod>2015-09-10T08:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/agar-data-windows-10-tidak-dicuri/</loc>
+    <lastmod>2015-09-10T08:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/renungan-kemerdekaan/</loc>
+    <lastmod>2015-08-17T03:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/solusi-jvm-505-blackberry/</loc>
+    <lastmod>2015-06-11T07:05:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-ctb-locker-dan-efek-bahaya-bagi-pc/</loc>
+    <lastmod>2015-05-14T06:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/dampak-positif-musuh-lohemang-ada/</loc>
+    <lastmod>2015-04-26T00:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/saran-tweak-buat-samsung-galaxy-y-gt-s5360/</loc>
+    <lastmod>2015-04-22T05:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/kuis-hari-bumi-2015/</loc>
+    <lastmod>2015-04-22T05:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-menambahkan-full-script-adfly-di-blog/</loc>
+    <lastmod>2015-04-13T06:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/teknik-seo-page-rank-menggunakan-alexa/</loc>
+    <lastmod>2015-04-11T09:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tutorial-install-cwm-samsung-galaxy-fame/</loc>
+    <lastmod>2015-04-11T08:13:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/mama-itu.../</loc>
+    <lastmod>2015-04-11T07:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/windows-10-bisa-diinstall-sekarang-tapi../</loc>
+    <lastmod>2015-04-09T07:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/windows-10-fakta-nya/</loc>
+    <lastmod>2015-04-09T07:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/cwm-itu-apa/</loc>
+    <lastmod>2015-04-01T09:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/root-samsung-galaxy-fame/</loc>
+    <lastmod>2015-03-25T06:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/root-samsung-galaxy-young-s5360/</loc>
+    <lastmod>2015-03-19T23:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/win-loader-solution-of-activation/</loc>
+    <lastmod>2015-03-18T22:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/sytem-ui-zenfone-for-samsung-galaxy-young-s5360/</loc>
+    <lastmod>2015-03-18T22:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/kumpulan-dork-webdav/</loc>
+    <lastmod>2015-03-16T19:13:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/flashing-andromax-cad686g/</loc>
+    <lastmod>2015-03-16T18:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/software-penerjemah-bahasa-lampung/</loc>
+    <lastmod>2015-03-16T18:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/mengenai-delphi/</loc>
+    <lastmod>2015-03-16T18:13:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-windows-10/</loc>
+    <lastmod>2015-03-16T18:08:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/saran-minirom-dan-tweak-yang-cocok/</loc>
+    <lastmod>2015-03-10T18:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/ldbi-k4-2015-se-kota-bandar-lampung/</loc>
+    <lastmod>2015-03-09T20:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/pengetahuan-backtrackkali-linux/</loc>
+    <lastmod>2015-03-08T23:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/flash-smartfren-andromax-ad686g-atau-andromax-c/</loc>
+    <lastmod>2015-02-15T04:22:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/saran-minirom-tweakkernel-dan-lainnya/</loc>
+    <lastmod>2014-12-26T22:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/minirom-for-samsung-galaxy-y-s5360/</loc>
+    <lastmod>2014-12-25T18:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/fakta-windows-10/</loc>
+    <lastmod>2014-12-23T05:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/windows-10-bisa-dicoba-sekarang/</loc>
+    <lastmod>2014-12-23T05:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/system-ui-rasa-zenfone-asus/</loc>
+    <lastmod>2014-12-23T04:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/windows-loader/</loc>
+    <lastmod>2014-12-19T06:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/software-deface/</loc>
+    <lastmod>2014-11-30T05:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/pengetahuan/</loc>
+    <lastmod>2014-11-30T04:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/software-backtrack/</loc>
+    <lastmod>2014-11-30T04:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/backtrack-v2/</loc>
+    <lastmod>2014-11-08T05:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/ebook/</loc>
+    <lastmod>2014-11-08T05:58:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/root-samsung-galaxy-young-gt-s5360/</loc>
+    <lastmod>2014-11-05T04:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/bn.id/</loc>
+    <lastmod>2014-11-02T01:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/contact-me/</loc>
+    <lastmod>2014-11-02T01:40:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/delphi/</loc>
+    <lastmod>2014-09-18T20:43:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/dork-webdav/</loc>
+    <lastmod>2014-09-12T22:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/45-butir-pancasila/</loc>
+    <lastmod>2014-03-30T01:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/backtrack-v1/</loc>
+    <lastmod>2014-03-26T01:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-backtrack/</loc>
+    <lastmod>2014-03-26T00:11:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/dampak-positif-musuh/</loc>
+    <lastmod>2014-03-24T05:11:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/lampung-penerjemah/</loc>
+    <lastmod>2014-03-14T03:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/semua-tentang-dia-/</loc>
+    <lastmod>2014-03-14T01:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/doraemon-last-story/</loc>
+    <lastmod>2014-03-13T03:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/bbm-for-pc/</loc>
+    <lastmod>2014-03-12T06:05:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/bitcoin-aman-atau-beresiko/</loc>
+    <lastmod>2014-03-12T06:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-bitcoin/</loc>
+    <lastmod>2014-03-12T06:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-html/</loc>
+    <lastmod>2014-03-12T05:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-root/</loc>
+    <lastmod>2014-03-12T05:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/proxy-gratis/</loc>
+    <lastmod>2014-03-08T20:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/soal-pembelajaran-un-2014/</loc>
+    <lastmod>2014-03-02T01:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/ayo-lihat-skor-seo-mu/</loc>
+    <lastmod>2014-02-27T23:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/tentang-seo/</loc>
+    <lastmod>2014-02-27T07:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/semua-tentang-virtual-box/</loc>
+    <lastmod>2014-02-27T05:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-proxy/</loc>
+    <lastmod>2014-02-22T18:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/tags/game/</loc>
+    <lastmod>2014-02-22T17:41:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/guns/</loc>
+    <lastmod>2014-02-22T17:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/try-out-online/</loc>
+    <lastmod>2014-02-14T21:43:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/ddos-attack/</loc>
+    <lastmod>2014-02-08T21:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/yok-kenali-dan-hindari-bahaya-narkotika-/</loc>
+    <lastmod>2013-12-09T22:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/apa-itu-fotosintesis/</loc>
+    <lastmod>2013-12-09T22:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/kemah/</loc>
+    <lastmod>2013-12-07T07:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/sumber-zat-gizi/</loc>
+    <lastmod>2013-12-07T06:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bellabeen.github.io/post/sistem-pernapasan/</loc>
+    <lastmod>2013-12-07T05:58:00+00:00</lastmod>
+  </url>
+  
 </urlset>

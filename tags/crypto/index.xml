@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crypto on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/crypto/</link>
+    <description>Recent content in crypto on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Sep 2018 16:33:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[writeups] noxCTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-noxctf-2018/</link>
+      <pubDate>Sat, 08 Sep 2018 16:33:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-noxctf-2018/</guid>
+      <description>Tepat tadi malam telah berakhir nya competition noxCTF di https://ctf18.noxale.com/ daftar kemarin siang jam 1 an cuman ngerjain 2 soal heheheMendingan kita langsung liat bagaimana sih writeup nya
+Soal bisa diakses disini https://ctf18.noxale.com/challenges
+Chop Suey 
+Today I ate in a Chinese restaurant and got myself a fortune cookie. These things usually contain a note with a nice sentence or phrase, but mine had numbers in it instead! Can you help me find the meaning of the numbers?</description>
+    </item>
+    
+    <item>
+      <title>[writeups] ANGSTROM CTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</link>
+      <pubDate>Sun, 01 Apr 2018 07:57:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-angstrom-ctf-2018/</guid>
+      <description>&amp;nbsp;Pada tanggal 16 - 22 Maret 2018 telah berlangsung kompetisi CTF yang berada di website http://angstromctf.com. Pada saat itu kami berhasil menyelesaikan beberapa soal yang telah kami solved berikut beberapa soal dan write ups nya1.Warm Up (10)    Soal Diberikan website&amp;nbsp; yang mengarah ke link https://angstromctf.com/static/crypto/warm_up/ciphertext.txt
+Pada file tersebut terdapat file yang berisi myjd{ij_fkwizq}. Kita buka web cryptii.com. Pertama kita gunakan Caesar Chiper ,tapi tidak mendapatkan apa apa, Maka pada clue nya yaitu A very Fine cipher,kita ganti menjadi Affine Cipher maka kita decode hasil cipher tadi menggunakan Affine Chiper dengan Slope A 71 Intercept B 45 maka Wala mendapatkan flag nya actf{it_begins}</description>
+    </item>
+    
+  </channel>
+</rss>

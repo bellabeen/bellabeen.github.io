@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on bellabeen</title>
+    <link>https://bellabeen.github.io/tags/security/</link>
+    <description>Recent content in Security on bellabeen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 Feb 2019 16:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bellabeen.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apa itu Trusted Platform Module (TPM) atau Module TPM </title>
+      <link>https://bellabeen.github.io/post/apa-itu-trusted-platform-module-tpm-atau-module-tpm/</link>
+      <pubDate>Thu, 14 Feb 2019 16:08:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/apa-itu-trusted-platform-module-tpm-atau-module-tpm/</guid>
+      <description>Sedikit cerita beberapa hari yang lalu gua dual boot Windows 10 dengan Parrot , cuman itu sangat menyebalkan tidak berjalan seperti biasa nya saat instalasi dual boot pada umum nya. Kenapa? ternyata di laptop gua terpasang sebuah module yang sangat secure
+Yaps benar sekali module tersebut adalah Trusted Platform Module (TPM) Lohh apa itu TPM? TPM&amp;nbsp; merupakan module/chip khusus buatan https://trustedcomputinggroup.org/work-groups/trusted-platform-module/ pada perangkat/device tertentu yang menyimpan kunci enkripsi RSA khusus untuk sistem host untuk otentikasi perangkat keras.</description>
+    </item>
+    
+    <item>
+      <title>[writeups] RitSecCTF 2018</title>
+      <link>https://bellabeen.github.io/post/writeups-ritsecctf-2018/</link>
+      <pubDate>Mon, 19 Nov 2018 07:58:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/writeups-ritsecctf-2018/</guid>
+      <description>&amp;nbsp;Kompetisi yang berakhir beberapa saat yang lalu, disini saya hanya solved beberapa saja untuk challenge nya, perlu di improve lagi kemampuan nyaKategori Web
+Space Force (100)
+The Space Force has created a portal for the public to learn about and be in awe of our most elite Space Force Fighters. Check it out at fun.ritsec.club:8005!
+Solved 
+Didapatkan link menuju fun.ritsec.club:8005
+
+Disitu tidak ada apa apa ya hanya tampilan kosong saja, tapi saya iseng mengisi dengan kalimat The Javelin Lalu muncul lah teks dialog tersebutKarena iseng lagi saya coba menggunakan query SQL &#39;-&#39; didapatkan lah hasil seperti dibawahDan kita dapat Flag nya RITSEC{hey_there_h4v3_s0me_point$_3ny2Lx}p { margin-bottom: 0.</description>
+    </item>
+    
+    <item>
+      <title>[tutorial] Konfigurasi file .htaccess Di Webserver Apache</title>
+      <link>https://bellabeen.github.io/post/tutorial-konfigurasi-file-.htaccess-di-webserver-apache/</link>
+      <pubDate>Thu, 01 Nov 2018 22:51:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/tutorial-konfigurasi-file-.htaccess-di-webserver-apache/</guid>
+      <description>Yoo selamat semua nya, pada kesempatan kali ini gua akan memberitahukan cara nya bagaimana sih mengkonfigurasi file .htaccess pada direktori sebuah website
+Ehhh bang emang .htaccess itu file apa?
+Kalian bisa baca postingan gua sebelum nya disiniDaripada banyak cincong mending langsung aja kita konfigurasi
+Pastikan buat file bernama .htaccess pada directoryLalu buka file tersebut menggunakan text editor yang disukaiDisini saya menggunakan script Options -Indexes, apa sih gunanya script Option -Indexes ?</description>
+    </item>
+    
+    <item>
+      <title>[info] Apa itu File .htaccess dan Fungsi nya</title>
+      <link>https://bellabeen.github.io/post/info-apa-itu-file-.htaccess-dan-fungsi-nya/</link>
+      <pubDate>Thu, 01 Nov 2018 16:38:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/info-apa-itu-file-.htaccess-dan-fungsi-nya/</guid>
+      <description>File .htaccess? apa itu?
+Kalian mungkin sering mendengar kata kata itu, kira kira apa sih itu file .htaccess?
+ASCII file biasa yang bisa lu gunakan buat melalui text editor seperti notepad , sublime atau simple text lain nya. Ini akan membantu para webmaster dan developer baru dalam memahami file Htaccess. Htaccess adalah file extensi tanpa nama. Ini bukan nama.Htaccess atau halaman yang berakhiran .Htaccess. ini hanya tertulis .Htaccess tanpa nama.</description>
+    </item>
+    
+    <item>
+      <title>[tutorial] How to Install Nessus on Backbox Linux and Windows</title>
+      <link>https://bellabeen.github.io/post/tutorial-how-to-install-nessus-on-backbox-linux-and-windows/</link>
+      <pubDate>Tue, 11 Sep 2018 00:15:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/tutorial-how-to-install-nessus-on-backbox-linux-and-windows/</guid>
+      <description>Oke guys pada kesempatan kali ini gua akan memberikan tutorial bagaimana sih kita scanning network pada satu jaringan dan bagaimana untuk menginstall nessus pada linux dan windows
+Setelah postingan tentang basic nmap , sekarang waktu ya kita gunakan software lain yang fungsi nya hampir sama dengan nmap
+Apa sih itu kira kira?
+Yapss Nessus , software yang powerfull dalam segi penggunaan nya, bagaimana sih emang menginstall nya?
+Download PacketKita bisa download paket nya disini</description>
+    </item>
+    
+    <item>
+      <title>[review] Apa sih website Gauli[dot]net</title>
+      <link>https://bellabeen.github.io/post/review-apa-sih-website-gaulidotnet/</link>
+      <pubDate>Sun, 09 Sep 2018 20:24:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/review-apa-sih-website-gaulidotnet/</guid>
+      <description>Hallo semua, pada kesempatan kali ini gua mau ngereview sebuah website nih
+Kira kira apa ya website nya?
+Yaps pada kesempatan kali ini gua mau ngereview website Gauli&amp;nbsp;
+Hah Gauli? Kata kata nya aneh yaa guys. Website yang beralamat di gauli.net merupakan website yang memfasilitasi user untuk bereksperimen merusak dan mengambil alih widihh serem ya
+Gak seserem itu kok cuyy, ini website yang sangat mengedukasi bagaimana kita menjadi Ethical Hacker yang sebenernya :D</description>
+    </item>
+    
+    <item>
+      <title>NMAP From To Basic Tutorial</title>
+      <link>https://bellabeen.github.io/post/nmap-from-to-basic-tutorial/</link>
+      <pubDate>Mon, 21 May 2018 08:08:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/nmap-from-to-basic-tutorial/</guid>
+      <description>Вы знаете о NMAP?
+Или кто-то уже его использует?
+По случаю в этот раз я буду предоставлять базовые инструменты nmap
+Nmap - это инструмент с открытым исходным кодом для проведения разведки и проверки сетевой безопасности. Он предназначен для быстрой проверки больших сетей, хотя он также может работать против одного хоста. Nmap использует сложные IP-пакеты сложным способом, чтобы определить, какие хосты доступны в сети, какая служба (имя и версия приложения) предоставляется, какая операционная система (и версия) используется, какой тип брандмауэра / фильтра пакетов используется и ряд других характеристик</description>
+    </item>
+    
+    <item>
+      <title>Tutorial NMAP From To Basic</title>
+      <link>https://bellabeen.github.io/post/tutorial-nmap-from-to-basic/</link>
+      <pubDate>Mon, 21 May 2018 07:54:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/tutorial-nmap-from-to-basic/</guid>
+      <description>Do you know about NMAP?Or anyone already using it?
+On occasion this time I will provide basic using nmap tools
+Nmap an open source tool for exploration and network security audit. It is designed to check large networks quickly, although it can also work against a single host. Nmap uses raw IP packets in a sophisticated way to determine which hosts are available on the network, what service (application name and version) is provided, what operating system (and version) is used, what type of firewall / packet filter is used, and a number of other characteristics</description>
+    </item>
+    
+    <item>
+      <title>[LCTF] Writeups CIat Ciat</title>
+      <link>https://bellabeen.github.io/post/lctf-writeups-ciat-ciat/</link>
+      <pubDate>Sun, 20 May 2018 16:17:00 +0000</pubDate>
+      
+      <guid>https://bellabeen.github.io/post/lctf-writeups-ciat-ciat/</guid>
+      <description>Writeups simple work on the problem from LCTF {Lappung_CTF} Ciat Ciat.png
+Given image file
+The cave is confused what to do
+Here only use utilities on linux that is strings
+With a very bombastic command strings ciat-ciat.png
+&amp;nbsp;
+
+Gotcha
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; LCTF {l1h4t_5tr1ng5_b1ar_p4n4s}
+Lots of writeups LCTF Event next time cave update, so stay tune</description>
+    </item>
+    
+  </channel>
+</rss>
