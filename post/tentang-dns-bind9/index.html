@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tentang DNS Bind9</title>
+  <head>
+  <title>
+      
+          Tentang DNS Bind9 - bellabeen
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="map[bio:Pengamat Langit homepage:https://twitter.com/ardiantapargo image:https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg name:Muhammad Bella Buay Nunyai]" />
+  <link rel="shortcut icon" type="image/x-icon" href="/img/">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://bellabeen.github.io/style.min.a6cab246517742ad1189b209575fc61556550e663cdfe02a0aab0632b39e978b.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="Tentang DNS Bind9" />
+<meta property="og:description" content="Hoho saya kembali lagi nih
+Sekian lama gak posting posting,jadi kangen posting deh :p
+Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9
+Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p
+Daripada kepo mending baca nih
+Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dari Berkeley Internet Name Domain adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bellabeen.github.io/post/tentang-dns-bind9/" />
+<meta property="article:published_time" content="2015-12-23T06:45:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-12-23T06:45:00&#43;00:00"/>
 
 <meta itemprop="name" content="Tentang DNS Bind9">
 <meta itemprop="description" content="Hoho saya kembali lagi nih
@@ -22,20 +51,6 @@ Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dar
 
 
 <meta itemprop="keywords" content="Info,Internet," />
-
-
-<meta property="og:title" content="Tentang DNS Bind9" />
-<meta property="og:description" content="Hoho saya kembali lagi nih
-Sekian lama gak posting posting,jadi kangen posting deh :p
-Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9
-Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p
-Daripada kepo mending baca nih
-Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dari Berkeley Internet Name Domain adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://bellabeen.github.io/post/tentang-dns-bind9/" />
-<meta property="article:published_time" content="2015-12-23T06:45:00&#43;00:00"/>
-<meta property="article:modified_time" content="2015-12-23T06:45:00&#43;00:00"/>
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tentang DNS Bind9"/>
 <meta name="twitter:description" content="Hoho saya kembali lagi nih
@@ -45,202 +60,57 @@ Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p
 Daripada kepo mending baca nih
 Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dari Berkeley Internet Name Domain adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya."/>
 
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
 
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
 
-
-<link rel="icon" href="/img/logo.svg" />
-
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/prism.css" />
-
-
-
+  
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 	ga('create', 'UA-80517197-1', 'auto');
 	
 	ga('send', 'pageview');
 }
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
 
-
-<meta itemprop="name" content="Tentang DNS Bind9">
-<meta itemprop="description" content="Hoho saya kembali lagi nih
-Sekian lama gak posting posting,jadi kangen posting deh :p
-Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9
-Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p
-Daripada kepo mending baca nih
-Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dari Berkeley Internet Name Domain adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya.">
-
-
-<meta itemprop="datePublished" content="2015-12-23T06:45:00&#43;00:00" />
-<meta itemprop="dateModified" content="2015-12-23T06:45:00&#43;00:00" />
-<meta itemprop="wordCount" content="580">
-
-
-
-<meta itemprop="keywords" content="Info,Internet," />
-
-
-<meta property="og:title" content="Tentang DNS Bind9" />
-<meta property="og:description" content="Hoho saya kembali lagi nih
-Sekian lama gak posting posting,jadi kangen posting deh :p
-Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9
-Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p
-Daripada kepo mending baca nih
-Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dari Berkeley Internet Name Domain adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://bellabeen.github.io/post/tentang-dns-bind9/" />
-<meta property="article:published_time" content="2015-12-23T06:45:00&#43;00:00"/>
-<meta property="article:modified_time" content="2015-12-23T06:45:00&#43;00:00"/>
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tentang DNS Bind9"/>
-<meta name="twitter:description" content="Hoho saya kembali lagi nih
-Sekian lama gak posting posting,jadi kangen posting deh :p
-Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9
-Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p
-Daripada kepo mending baca nih
-Menurut saya penjelasan secara singkat tentang BIND9 adalah BIND kepanjangan dari Berkeley Internet Name Domain adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya."/>
-
-    </head>
-    <body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+  <body>
     
-            <a class="navbar-brand" href="https://bellabeen.github.io"><img src="/img/logo.svg" width="30" height="30" class="d-inline-block align-top rounded-circle"
-                alt=""> bellabeen</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="https://bellabeen.github.io">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0" action="https://www.google.co.id" id="cse-search-box">
-                    <input type="hidden" name="cx" value="partner-pub-6279325630224392:9670052267" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="sa" value="search" />
-                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Kata Kunci" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Cari</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-        <header>
-    <div class="jumbotron jumbotron-fluid bg-success text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Catatan Belajar dan Timbunan Ilmu</h1>
-                    <p class="lead">Try It Harder</p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <h1>Tentang DNS Bind9</h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://bellabeen.github.io/img/">
+    <a href="https://bellabeen.github.io"><img src="https://bellabeen.github.io/img/avatar-border.svg"></a>
+  </div>
+  
+  <h2><a class="author" href="https://bellabeen.github.io"></a></h2>
 </header>
 
-        <div class="container mb-5">
-            <div class="row">
+  
+  
+  <p class="date">December 23, 2015</p>
+  
+  <div id="contentBody">
+    <p><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-zk4vAFgKLLo/VnqzH-9c5XI/AAAAAAAAJ1w/VjcyQ38kVuE/s1600/1BZDyAb.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-zk4vAFgKLLo/VnqzH-9c5XI/AAAAAAAAJ1w/VjcyQ38kVuE/s1600/1BZDyAb.png" /></a></div><br />Hoho saya kembali lagi nih<br />Sekian lama gak posting posting,jadi kangen posting deh :p<br />Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9<br />Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p<br />Daripada kepo mending baca nih<br /><br />Menurut saya penjelasan secara singkat tentang BIND9 adalah <b>BIND </b>kepanjangan dari <b>Berkeley Internet Name Domain </b>adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya.&nbsp;<a class="mw-redirect" href="https://id.wikipedia.org/wiki/DEC" title="DEC"></a><br />Mau lebih lengkap? Googling yee :D<br /><br />Kalian tau DNS? Kalau gak tau nanti di next postingan saya yaa atau googling dulu aja<br />Kalau kalian sudah tau mengenai DNS berarti tinggal kita kasih tau penjelasan tentang BIND9<br /><b>Pengertian DNS BIND9</b>Sebuah server yang berfungsi untuk memberikan sebuah penamaan dimana sebuah  IP diberikan sebuah nama&nbsp; supaya lebih gampang di ingat dan  penyebutan nya, dibandingkan dengan IP misal <b>172.168.66.34</b> dan di beri penamaan bn.co.id pasti kita lebih mudah mengingat  bn.co.id dibandingkan dengan IP yang tadi jadi intinya DNS Server  berfungsi untuk mempermudah dalam hal memberikan penamaan kepada sebuah  IP agar mudah diingat dan dalam penulisan di search engine<br /><br /><b>Cara kerja nya</b><br />Sebenernya kalau disuruh menjelaskan tentang cara kerja nya bisa dibilang susah susah gampang,karena lebih enak mempraktikan daripada sebuah teori<br /><br />DNS menggunakan relasi atau hubungan antara client – server untuk resolusi sebuah nama host. Pada saat  client mencari satu host, maka ia akan mengirimkan query ke server DNS.  Query adalah satu permintaan untuk resolusi nama yang dikirimkan ke  server DNS<br />Penerapan&nbsp; nya bisa dilihat pada gambar dibawah ini<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-AQOUqYIrN1w/Vnqw6cyAANI/AAAAAAAAJ1k/lOtiEZPXiRI/s1600/recursive-query-dns.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="254" src="http://3.bp.blogspot.com/-AQOUqYIrN1w/Vnqw6cyAANI/AAAAAAAAJ1k/lOtiEZPXiRI/s320/recursive-query-dns.jpg" width="320" />&nbsp;</a></div><div class="separator" style="clear: both; text-align: left;">Masih kurang paham?</div><div class="separator" style="clear: both; text-align: left;">Ini penjelasan nya</div><ol><li>Pada komputer Client, sebuah program aplikasi misalnya http,ftp dsb,  meminta pemetaan IP Address (forward lookup query). Sebuah program  aplikasi pada host yang mengakses domain system disebut sebagai  resolver, resolver menghubungi DNS server, yang biasa disebut name  server.</li><li>Name server meng-cek ke local database, jika ditemukan, name  server mengembalikan IP Address ke resolver jika tidak ditemukan akan  meneruskan query tersebut ke name server&nbsp; root server.</li><li>Terakhir barulah si client bisa secara langsung menghubungi  sebuah website / server yang diminta dengan menggunakan IP Address yang  diberikan oleh DNS server.</li></ol><div class="separator" style="clear: both; text-align: left;">Jika permintaan tidak ada pada database,&nbsp; name server akan  menghubungi server root dan server lainnya dengan cara sebagai berikut :</div><ol><li>Saat kita mengetikkan sebuah nama domain misalnya <a href="http://www">http://www</a>.  neon.cs.virginia.edu pada web browser,&nbsp; maka aplikasi http (resolver)  akan mengirimkan query ke Name Server DNS Server local atau DNS Server  Internet Service Provider.</li><li>Awalnya name server akan menghubungi server root. Server root  tidak mengetahui IP Address domain tersebut, ia hanya akan memberikan  IP Address server edu.</li><li>Selanjutnya name server akan bertanya lagi pada server edu  berpa IP Address domain neon.cs.virginia.edu.&nbsp; Server edu tidak  mengetahui IP Address domain tersebut, ia hanya akan memberikan IP  Address server virginia.edu.</li><li>Selanjutnya name server akan bertanya ke server virginia.edu  tentang&nbsp; IP Address neon.cs.virginia.edu. Dan server virginia.edu hanya  mengetahui dan memberikan jawaban berupa&nbsp; IP Address server  cs.virginia.edu</li><li>Selanjutnya name server akan bertanya ke server  cs.virginia.edu tentang&nbsp; IP Address neon.cs.virginia.edu. Dan barulah  cs.virginia.edu mengetahui dan menjawab berapa IP Address domain  neon.cs.virginia.edu.</li><li>Terakhir barulah computer client bisa secara langsung  menghubungi domain neon.cs.virginia.edu dengan menggunakan IP Address  yang diberikan oleh server cs.virginia.edu.</li><li>IP Address milik neon.cs.virginia.edu kemudian akan disimpan  sementara oleh DNS server Anda untuk keperluan nanti. Proses ini disebut  <i>caching</i>, yang berguna untuk mempercepat pencarian nama domain yang telah dikenalnya.&nbsp;</li></ol>Sudah paham kan cara kerja BIND? Kurang lebih seperti itu lah alur kerja nya,saat kita browsing kita hanya melihat sebuah website bisa diakses atau tidak tapi kita tidak tau mengenai alur dan cara kerja nya gimana website itu bisa diakses heheh :D<br />Next kita bahas mengenai DNS ya guys <br /><div class="separator" style="clear: both; text-align: left;">&nbsp;   </div></p>
 
-                <div class="col-sm-12 col-lg-8 mb-5 card">
-                    <article>
-                        <div class="">
-                           <div class="card-body p-md-5">
-                                
-                               <div class="post-header mb-5">
-                                    
-                                    <div class="mb-3">
-                                        <img src="https://lh5.googleusercontent.com/-h2tLsyijw8Q/AAAAAAAAAAI/AAAAAAAACys/WBpjN_34z3o/s32-c/photo.jpg" class="rounded-circle" width="32" height="32" />
-                                        <a href="https://twitter.com/ardiantapargo">Muhammad Bella Buay Nunyai</a> | <time>23-12-2015</time>
-                                    </div>
-
-                                    <h2 class="card-title mb-3">Tentang DNS Bind9</h2>
-                                    
-                                    <div>
-                                        
-                                        <span class="badge badge-success">
-                                             #<a class="text-white" href="/tags/info">Info</a>
-                                        </span> 
-                                        
-                                        <span class="badge badge-success">
-                                             #<a class="text-white" href="/tags/internet">Internet</a>
-                                        </span> 
-                                        
-                                    </div>
-
-                                </div>
-                                <div class="post-content">
-                                    <p><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-zk4vAFgKLLo/VnqzH-9c5XI/AAAAAAAAJ1w/VjcyQ38kVuE/s1600/1BZDyAb.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-zk4vAFgKLLo/VnqzH-9c5XI/AAAAAAAAJ1w/VjcyQ38kVuE/s1600/1BZDyAb.png" /></a></div><br />Hoho saya kembali lagi nih<br />Sekian lama gak posting posting,jadi kangen posting deh :p<br />Kali ini saya akan memberitahukan kepada kalian semua hal yang terkait dengan BIND9<br />Hah BIND? Apa sih emang itu min? Cie kalian kepo yaa :p<br />Daripada kepo mending baca nih<br /><br />Menurut saya penjelasan secara singkat tentang BIND9 adalah <b>BIND </b>kepanjangan dari <b>Berkeley Internet Name Domain </b>adalah sebuah server DNS yang paling umum digunakan diinternet,khusus nya pada sistem operasi Unix beserta turunan nya.&nbsp;<a class="mw-redirect" href="https://id.wikipedia.org/wiki/DEC" title="DEC"></a><br />Mau lebih lengkap? Googling yee :D<br /><br />Kalian tau DNS? Kalau gak tau nanti di next postingan saya yaa atau googling dulu aja<br />Kalau kalian sudah tau mengenai DNS berarti tinggal kita kasih tau penjelasan tentang BIND9<br /><b>Pengertian DNS BIND9</b>Sebuah server yang berfungsi untuk memberikan sebuah penamaan dimana sebuah  IP diberikan sebuah nama&nbsp; supaya lebih gampang di ingat dan  penyebutan nya, dibandingkan dengan IP misal <b>172.168.66.34</b> dan di beri penamaan bn.co.id pasti kita lebih mudah mengingat  bn.co.id dibandingkan dengan IP yang tadi jadi intinya DNS Server  berfungsi untuk mempermudah dalam hal memberikan penamaan kepada sebuah  IP agar mudah diingat dan dalam penulisan di search engine<br /><br /><b>Cara kerja nya</b><br />Sebenernya kalau disuruh menjelaskan tentang cara kerja nya bisa dibilang susah susah gampang,karena lebih enak mempraktikan daripada sebuah teori<br /><br />DNS menggunakan relasi atau hubungan antara client – server untuk resolusi sebuah nama host. Pada saat  client mencari satu host, maka ia akan mengirimkan query ke server DNS.  Query adalah satu permintaan untuk resolusi nama yang dikirimkan ke  server DNS<br />Penerapan&nbsp; nya bisa dilihat pada gambar dibawah ini<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-AQOUqYIrN1w/Vnqw6cyAANI/AAAAAAAAJ1k/lOtiEZPXiRI/s1600/recursive-query-dns.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="254" src="http://3.bp.blogspot.com/-AQOUqYIrN1w/Vnqw6cyAANI/AAAAAAAAJ1k/lOtiEZPXiRI/s320/recursive-query-dns.jpg" width="320" />&nbsp;</a></div><div class="separator" style="clear: both; text-align: left;">Masih kurang paham?</div><div class="separator" style="clear: both; text-align: left;">Ini penjelasan nya</div><ol><li>Pada komputer Client, sebuah program aplikasi misalnya http,ftp dsb,  meminta pemetaan IP Address (forward lookup query). Sebuah program  aplikasi pada host yang mengakses domain system disebut sebagai  resolver, resolver menghubungi DNS server, yang biasa disebut name  server.</li><li>Name server meng-cek ke local database, jika ditemukan, name  server mengembalikan IP Address ke resolver jika tidak ditemukan akan  meneruskan query tersebut ke name server&nbsp; root server.</li><li>Terakhir barulah si client bisa secara langsung menghubungi  sebuah website / server yang diminta dengan menggunakan IP Address yang  diberikan oleh DNS server.</li></ol><div class="separator" style="clear: both; text-align: left;">Jika permintaan tidak ada pada database,&nbsp; name server akan  menghubungi server root dan server lainnya dengan cara sebagai berikut :</div><ol><li>Saat kita mengetikkan sebuah nama domain misalnya <a href="http://www">http://www</a>.  neon.cs.virginia.edu pada web browser,&nbsp; maka aplikasi http (resolver)  akan mengirimkan query ke Name Server DNS Server local atau DNS Server  Internet Service Provider.</li><li>Awalnya name server akan menghubungi server root. Server root  tidak mengetahui IP Address domain tersebut, ia hanya akan memberikan  IP Address server edu.</li><li>Selanjutnya name server akan bertanya lagi pada server edu  berpa IP Address domain neon.cs.virginia.edu.&nbsp; Server edu tidak  mengetahui IP Address domain tersebut, ia hanya akan memberikan IP  Address server virginia.edu.</li><li>Selanjutnya name server akan bertanya ke server virginia.edu  tentang&nbsp; IP Address neon.cs.virginia.edu. Dan server virginia.edu hanya  mengetahui dan memberikan jawaban berupa&nbsp; IP Address server  cs.virginia.edu</li><li>Selanjutnya name server akan bertanya ke server  cs.virginia.edu tentang&nbsp; IP Address neon.cs.virginia.edu. Dan barulah  cs.virginia.edu mengetahui dan menjawab berapa IP Address domain  neon.cs.virginia.edu.</li><li>Terakhir barulah computer client bisa secara langsung  menghubungi domain neon.cs.virginia.edu dengan menggunakan IP Address  yang diberikan oleh server cs.virginia.edu.</li><li>IP Address milik neon.cs.virginia.edu kemudian akan disimpan  sementara oleh DNS server Anda untuk keperluan nanti. Proses ini disebut  <i>caching</i>, yang berguna untuk mempercepat pencarian nama domain yang telah dikenalnya.&nbsp;</li></ol>Sudah paham kan cara kerja BIND? Kurang lebih seperti itu lah alur kerja nya,saat kita browsing kita hanya melihat sebuah website bisa diakses atau tidak tapi kita tidak tau mengenai alur dan cara kerja nya gimana website itu bisa diakses heheh :D<br />Next kita bahas mengenai DNS ya guys <br /><div class="separator" style="clear: both; text-align: left;">&nbsp;   </div></p>
-
-                                </div>
-                                <div class="post-footer">
-                                    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    (function () {
-        
-        
-        if (window.location.hostname == "localhost")
-            return;
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        var disqus_shortname = 'bellabeen';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    </div>
-
-                    <div class="col-sm-12 col-lg-4">
-                       <aside>
-    <div class="widget">
-        <a href="http://projects.id/petani_kode" target="_blank">
-        <img src="http://lorempixel.com/360/250" alt="Proyek Petani Kode"/>
-        </a>
-    </div> 
-</aside>
-                    </div>
-            </div>
-        </div>
-
-        <footer class="border border-bottom-0 border-left-0 border-right-0">
-    <div class="container pt-3 pb-3 pt-md-5 pb-md-5">
-        <div class="row">
-            <div class="col">
-
-                &copy; 2019 <a href="https://bellabeen.github.io">bellabeen</a> | Template by <a href="https://www.petanikode.com" target="blank">Petani Kode</a>
-
-            </div>
-        </div>
-    </div>
+  </div>
+  <footer>
+  <p>
+  &copy;  .
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
 </footer>
-        <script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js"></script>
-<script type="text/javascript" src="/js/popper.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/prism.js"></script>
-    </body>
+
+
+  </body>
 </html>
