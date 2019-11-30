@@ -11,7 +11,6 @@ disqus:
   shortname: bellabeen
   categories:
     - blog
-    - project
 facebook: bellabeen
 linkedin: muhammadbellabeen
 instagram: bellabeen
@@ -22,7 +21,7 @@ authors:
     name: Muhammad Bella Buay Nunyai
     bio: A man who tries to be human
     external-image: false
-    picture: assets/images/profiles.jpg
+    picture: assets/images/profile.jpg
 width: normal
 projects: true
 about: false
