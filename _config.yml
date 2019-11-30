@@ -1,5 +1,5 @@
 name: Muhammad Bella BN
-bio: Mencoba menjadi manusia
+bio: A man who tries to be human
 external-image: false
 picture: assets/images/profiles.jpg
 resume: false
@@ -18,13 +18,13 @@ instagram: bellabeen
 github: bellabeen
 email: rootsquid@gmail.com
 authors:
-  fadhilthomas:
+  bellabeen:
     name: Muhammad Bella Buay Nunyai
-    bio: Mencoba menjadi manusia
+    bio: A man who tries to be human
     external-image: false
     picture: assets/images/profiles.jpg
 width: normal
-projects: true
+projects: false
 about: false
 blog: true
 read-time: true
