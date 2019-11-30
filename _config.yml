@@ -1,7 +1,7 @@
 name: Muhammad Bella Buay Nunyai
 bio: A man who tries to be human
 external-image: false
-picture: assets/images/profiles.jpg
+picture: assets/images/profile.jpg
 resume: false
 resume-external: false
 resume-url: 'https://google.com/?q=my+resume'
@@ -18,7 +18,7 @@ github: bellabeen
 email: rootsquid@gmail.com
 authors:
   bellabeen:
-    name: Muhammad Bella BN
+    name: Muhammad Bella Buay Nunyai
     bio: A man who tries to be human
     external-image: false
     picture: assets/images/profile.jpg
