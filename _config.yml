@@ -1,14 +1,14 @@
 name: Muhammad Bella BN
-bio: A man who believes in Hogwarts and Wakanda
+bio: Mencoba menjadi manusia
 external-image: false
 picture: assets/images/profiles.jpg
 resume: false
 resume-external: false
 resume-url: 'https://google.com/?q=my+resume'
-url: 'https://fadhilthomas.github.io'
+url: 'https://bellabeen.github.io'
 permalink: '/:title/'
 disqus:
-  shortname: fadhilthomas
+  shortname: bellabeen
   categories:
     - blog
     - project
@@ -19,8 +19,8 @@ github: bellabeen
 email: rootsquid@gmail.com
 authors:
   fadhilthomas:
-    name: Muhammad Thomas Fadhila Yahya
-    bio: A man who believes in Hogwarts and Wakanda
+    name: Muhammad Bella Buay Nunyai
+    bio: Mencoba menjadi manusia
     external-image: false
     picture: assets/images/profiles.jpg
 width: normal
