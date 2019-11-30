@@ -12,8 +12,8 @@ disqus:
   categories:
     - blog
     - project
-facebook: mbellabn
-linkedin: muhammadbellabn
+facebook: bellabeen
+linkedin: muhammadbellabeen
 instagram: bellabeen
 github: bellabeen
 email: rootsquid@gmail.com
@@ -24,7 +24,7 @@ authors:
     external-image: false
     picture: assets/images/profiles.jpg
 width: normal
-projects: false
+projects: true
 about: false
 blog: true
 read-time: true
