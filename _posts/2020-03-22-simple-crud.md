@@ -28,4 +28,16 @@ Sekarang coba input data mahasiswa dengan klik *menu Insert*
 ![alt text](https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/simple-crud-api/01.png)
 
 ### Koneksi Database PHP dengan MYSQLi
+Buat project baru kalian disini saya membuat folder project bernama **simple-crud-api** lalu didalam folder project tersebut buat 2 folder
+* conf/
+* lib/
 
+Didalam folder **conf/** kalian buat file dengan nama config.php lalu taruh script php dibawah ini -> save
+
+{% gist bellabeen/aeb533ab9d358b94d6b4d3a43e0141d0 %}
+
+Kalau sudah pada folder **lib/** buat file dengan nama DB.php lalu taruh script php dibawaha ini -> save
+
+{% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0/raw/46baee9396e93b3cad9fc108a4de82f99af965e7/config %}
+
+{% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0/config %}
