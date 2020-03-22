@@ -20,17 +20,10 @@ Berikut penjelasannya :
 
 ## Steps to Produce
 ### Membuat Database
-Buat terlebih dahulu databasenya, kalian bisa menggunakan query database saya dibawah ini. 
-
-Bagaimana cara menggunakannya? Akses phpmyadmin via localhost
-
-{% highlight sql %}
-CREATE TABLE `simple-crud-api`.`tbl-akademik` ( `id_akademik` INT NOT NULL AUTO_INCREMENT , `npm` INT NOT NULL , `nama` VARCHAR(25) NOT NULL , `alamat` TEXT NOT NULL , PRIMARY KEY (`id_akademik`)) ENGINE = InnoDB;
-{% endhighlight %}
-
-Sekarang coba input data mahasiswa dengan klik *menu Insert* 
+Buat terlebih dahulu databasenya, kalian bisa menggunakan query database saya dibawah ini.
 
 {% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0 %}
+Sekarang coba input data mahasiswa dengan klik *menu Insert* 
 
 ![alt text](https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/simple-crud-api/01.png)
 
