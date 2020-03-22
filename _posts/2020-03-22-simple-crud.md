@@ -28,6 +28,8 @@ CREATE TABLE `simple-crud-api`.`tbl-akademik` ( `id_akademik` INT NOT NULL AUTO_
 {% endhighlight %}
 
 Sekarang coba input data mahasiswa dengan klik *menu Insert* 
-
+</br>
+{% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0 %}
+</br>
 ![alt text](https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/simple-crud-api/01.png)
 
