@@ -42,9 +42,11 @@ Kalau sudah pada folder **lib/** buat file dengan nama DB.php lalu taruh script 
 
 {% highlight php %}
 <?php
-define("DB_HOST","localhost");
-define("DB_USER","bellabeen");
-define("DB_PASSWORD","kepoajalu");
-define("DB_NAME","3074218_latihanarjun");
+define("DB_HOST","localhost"); //nama server database
+define("DB_USER","bellabeen"); //username database
+define("DB_PASSWORD","kepoajalu"); //password database
+define("DB_NAME","3074218_latihanarjun"); //nama database yang digunakan
 ?>
 {% endhighlight %}
+
+Untuk memastikan sudah terhubung atau belum, coba kalian akses file di **lib/DB.php** apabila hanya tampilan warna putih saja dilayar berarti koneksi antara PHP dengan MYSQL sudah berhasil. Jika menghasilkan pesan error **Gagal melakukan koneksi ke MYSQL** kondisi tersebut php dengan database masih belum terhubung pastikan dan teliti kembali.
