@@ -28,4 +28,5 @@ CREATE TABLE `simple-crud-api`.`tbl-akademik` ( `id_akademik` INT NOT NULL AUTO_
 {% endhighlight %}
 
 Sekarang coba input data mahasiswa dengan klik *menu Insert* 
-![Markdowm Image][assets/images/simple-crud-insert-manual.png]
+
+![Markdowm Image][/image/assets/images/simple-crud-insert-manual.png]
