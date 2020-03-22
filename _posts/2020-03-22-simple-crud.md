@@ -1,11 +1,12 @@
 ---
-title: "[Catatan] Kembali"
+title: "Simple API CRUD PHP"
 layout: post
-date: '2019-11-30 16:15:56'
+date: '2020-03-22 18:15:56'
 headerImage: false
 star: true
 tag:
-- tulis
+- php
+- mysql
 category: blog
 author: bellabeen
 ---
