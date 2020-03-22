@@ -41,3 +41,12 @@ Kalau sudah pada folder **lib/** buat file dengan nama DB.php lalu taruh script 
 {% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0/raw/46baee9396e93b3cad9fc108a4de82f99af965e7/config %}
 
 {% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0/config %}
+
+{% highlight php %}
+<?php
+define("DB_HOST","localhost");
+define("DB_USER","bellabeen");
+define("DB_PASSWORD","kepoajalu");
+define("DB_NAME","3074218_latihanarjun");
+?>
+{% endhighlight %}
