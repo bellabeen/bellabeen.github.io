@@ -16,7 +16,7 @@ author: bellabeen
 
 Berikut penjelasannya :
 * Sebagai contoh disini apabila user ingin menambahkan data lewat sebuah form maka user tersebut melakukan proses **Create**
-* Apabila user ingin menghapus data maka proses tersebut disebut **Delete** , proses baca data dinamakan **READ** dan proses update data dinamakan **Update**
+* Apabila user ingin menghapus data maka proses tersebut disebut **Delete** , proses baca data dinamakan **Read** dan proses update data dinamakan **Update**
 
 ## Steps to Produce
 ### Membuat Database
@@ -34,13 +34,11 @@ Buat project baru kalian disini saya membuat folder project bernama **simple-cru
 
 Didalam folder **conf/** kalian buat file dengan nama config.php lalu taruh script php dibawah ini -> save
 
-{% gist bellabeen/aeb533ab9d358b94d6b4d3a43e0141d0 %}
+{% highlight sql %}
+CREATE TABLE `simple-crud-api`.`tbl-akademik` ( `id_akademik` INT NOT NULL AUTO_INCREMENT , `npm` INT NOT NULL , `nama` VARCHAR(25) NOT NULL , `alamat` TEXT NOT NULL , PRIMARY KEY (`id_akademik`)) ENGINE = InnoDB;
+{% endhighlight %}
 
 Kalau sudah pada folder **lib/** buat file dengan nama DB.php lalu taruh script php dibawaha ini -> save
-
-{% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0/raw/46baee9396e93b3cad9fc108a4de82f99af965e7/config %}
-
-{% gist bellabeen/f0c8523edb2628a551a46e79e05e8ff0/config %}
 
 {% highlight php %}
 <?php
