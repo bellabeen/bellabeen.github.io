@@ -39,8 +39,8 @@ Didalam folder **conf/** kalian buat file dengan nama config.php lalu taruh scri
 <?php
 define("DB_HOST","localhost"); //nama server database
 define("DB_USER","bellabeen"); //username database
-define("DB_PASSWORD","kepoajalu"); //password database
-define("DB_NAME","3074218_latihanarjun"); //nama database yang digunakan
+define("DB_PASSWORD",""); //password database
+define("DB_NAME","simple-crud-api"); //nama database yang digunakan
 ?>
 {% endhighlight %}
 
