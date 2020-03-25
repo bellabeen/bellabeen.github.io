@@ -135,6 +135,8 @@ Markdown can also contain images. I'll need to add something here sometime.
 ![Markdowm Image][6]
 <figcaption class="caption">Photo by John Doe</figcaption>
 
+[1]: http://daringfireball.net/projects/markdown/
+
 *Bigger Images*?
 
 {% highlight raw %}

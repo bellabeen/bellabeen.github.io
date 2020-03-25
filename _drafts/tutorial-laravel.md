@@ -25,6 +25,9 @@ Sekarang coba input data mahasiswa dengan klik *menu Insert*
 
 ![alt text](https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/simple-crud-api/01.png)
 
+![Markdowm Image][1]
+<figcaption class="caption">Hello World</figcaption>
+
 ### Koneksi Database PHP dengan MYSQLi
 Buat project baru kalian disini saya membuat folder project bernama **simple-crud-api** lalu didalam folder project tersebut buat 2 folder
 * conf/
@@ -42,3 +45,6 @@ Sekian tutorial sederhana membuat koneksi php dengan database. Untuk tutorial se
 2. [Install Laravel]()
 3. [Setting Server]()
 4. [Routing]()
+
+
+[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/simple-crud-api/01.png
