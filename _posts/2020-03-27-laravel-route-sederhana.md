@@ -40,11 +40,6 @@ Route::get('/about', function(){
 
 
 ## Penutup
-Coba kalian kreasikan dan eksperimen route yang lainnya agar kalian lebih paham mengenai route. Sekian tutorial membuat route untuk sebuah halaman. Untuk tutorial selanjutnya kalian bisa akses link dibawah ini
-1. [Install Composer]()
-2. [Install Laravel]()
-3. [Setting Server]()
-4. [[laravel] Memahami Route]()
-5. [[laravel] Membuat Route Untuk Halaman]()
+Coba kalian kreasikan dan eksperimen route yang lainnya agar kalian lebih paham mengenai route. Sekian tutorial membuat route untuk sebuah halaman. Untuk tutorial selanjutnya kalian bisa akses link ini [[laravel] Tutorial Laravel Series](https://bellabeen.github.io/tutorial-laravel-series/)
 
 [1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/2.png

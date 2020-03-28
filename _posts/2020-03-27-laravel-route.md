@@ -51,11 +51,7 @@ Route::get('/', function(){
 ## Penutup
 Laravel cukup fleksibel, dapat digunakan untuk memberikan beberapa jenis respon terhadap *request* yang datang. Tidak hanya *view* dan *string* seperti contoh diatas, bahkan kita bisa memberikan respon berupa data JSON, melakukan redirect, bahkan respon untuk mendownload file sudah disediakan. Kita akan bahas pada artikel artikel selanjutnya See You
 
-Sekian pengenalan sederhana mengenai routing. Untuk tutorial selanjutnya kalian bisa akses link dibawah ini
-1. [Install Composer]()
-2. [Install Laravel]()
-3. [Setting Server]()
-4. [[laravel] Memahami Route]()
+Sekian pengenalan sederhana mengenai routing. Untuk tutorial selanjutnya kalian bisa akses link ini [[laravel] Tutorial Laravel Series](https://bellabeen.github.io/tutorial-laravel-series/)
 
 [1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/0.png
 [2]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/1.png
