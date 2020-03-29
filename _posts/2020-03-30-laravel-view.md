@@ -47,8 +47,8 @@ Pada browser kita coba refresh maka tampilan halaman homepage berubah menjadi se
 ![Markdowm Image][1]
 <figcaption class="caption">Halaman Homepage</figcaption>
 
-Pada browser kita coba akses link **about** , maka tampilan halaman about menjadi seperti gambar dibawah ini
-![Markdowm Image][1]
+Coba akses link **about** , maka tampilan halaman about menjadi seperti gambar dibawah ini
+![Markdowm Image][2]
 <figcaption class="caption">Halaman About</figcaption>
 
 Bagaimana kalau viewnya itu berada didalam sub folder?
@@ -68,5 +68,5 @@ Route::get('/pages/about', function(){
 
 ## Penutup
 Mungkin itu sedikit pengenalan mengenai view, see you ditutorial selanjutnya.
-[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/3.png
-[2]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/4.png
+[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/view/1.png
+[2]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/view/3.png
