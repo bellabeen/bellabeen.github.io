@@ -21,3 +21,4 @@ Sekian tutorial sederhana membuat koneksi php dengan database. Untuk tutorial se
 3. [Setting Server]()
 4. [[laravel] Memahami Route](https://bellabeen.github.io/laravel-route/)
 5. [[laravel] Membuat Route Untuk Halaman](https://bellabeen.github.io/laravel-route-sederhana/)
+MuhammadBellaBN1851

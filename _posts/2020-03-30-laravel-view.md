@@ -1,7 +1,7 @@
 ---
 title: "[laravel] Memahami View"
 layout: post
-date: '2020-03-28 15:15:56'
+date: '2020-03-30 15:15:56'
 headerImage: false
 star: true
 tag:
@@ -67,13 +67,6 @@ Route::get('/pages/about', function(){
 {% endhighlight %}
 
 ## Penutup
-
-
-Sekian pengenalan sederhana mengenai routing. Untuk tutorial selanjutnya kalian bisa akses link dibawah ini
-1. [Install Composer]()
-2. [Install Laravel]()
-3. [Setting Server]()
-4. [[laravel] Memahami Route]()
-
+Mungkin itu sedikit pengenalan mengenai view, see you ditutorial selanjutnya.
 [1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/3.png
 [2]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/routing/4.png
