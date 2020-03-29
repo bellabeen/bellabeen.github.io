@@ -44,10 +44,12 @@ Route::get('/about', function(){
 
 Fungsi **view()** adalah fungsi helper laravel untuk memanggil file view. Untuk memanggil suatu file view, kita cukup memberikan namanya tanpa ekstensi **.php**, seperti pada route diatas. Laravel akan mencari dilokasi default file file view disimpan, yaity folder **laravelapp*/resources/views**
 Pada browser kita coba refresh maka tampilan halaman homepage berubah menjadi seperti ini
+
 ![Markdowm Image][1]
 <figcaption class="caption">Halaman Homepage</figcaption>
 
 Coba akses link **about** , maka tampilan halaman about menjadi seperti gambar dibawah ini
+
 ![Markdowm Image][2]
 <figcaption class="caption">Halaman About</figcaption>
 
@@ -68,5 +70,6 @@ Route::get('/pages/about', function(){
 
 ## Penutup
 Mungkin itu sedikit pengenalan mengenai view, see you ditutorial selanjutnya.
+
 [1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/view/1.png
 [2]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/view/3.png
