@@ -1,7 +1,7 @@
 ---
-title: "[devops] Cheetsheet"
+title: "[devops] Cheetsheet DevOps dan SRE"
 layout: post
-date: '2020-03-30 15:15:56'
+date: '2020-10-03 15:15:56'
 headerImage: false
 star: true
 tag:
