@@ -27,11 +27,8 @@ Hasilnya
 <figcaption class="caption">Send Notifikasi Slack</figcaption>
 {% highlight raw %}
 
-![Markdowm Image][/assets/send-notif-mft.jpeg]
-<figcaption class="caption">Send Notifikasi Slack Webhook</figcaption>
-{% endhighlight %}
-
 [1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/send-notif-mft.jpeg
+Untuk otomasisasi sesuai dengan schedule bisa gunakan cronjob untuk *triggered* file tersebut
 
 Oke mungkin sekian kalau ada pertanyaan atau bingung kalian bisa chat saya di <https://t.me/bellabeen>
 
