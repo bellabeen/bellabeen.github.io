@@ -19,7 +19,6 @@ Sudah lama tidak menulis lagi. Pada kesempatan kali ini saya mau bahas membuat n
 4. Buat channel sendiri *optional* untuk testing sebelum naik ke production
 5. Kalau semua sudah disiapkan kalian bisa gunakan simple code dibawah ini untuk mengirimkan notifikasi dislack based on *php*
 
-
 {% gist bellabeen/078a4aba35a50206da1e2073615904db %}
 
 Hasilnya
@@ -27,9 +26,10 @@ Hasilnya
 <figcaption class="caption">Send Notifikasi Slack</figcaption>
 {% highlight raw %}
 
-[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/send-notif-mft.jpeg
 Untuk otomasisasi sesuai dengan schedule bisa gunakan cronjob untuk *triggered* file tersebut
 
 Oke mungkin sekian kalau ada pertanyaan atau bingung kalian bisa chat saya di <https://t.me/bellabeen>
 
 Next time, akan develop bot dislack . See you~
+
+[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/send-notif-mft.jpeg
