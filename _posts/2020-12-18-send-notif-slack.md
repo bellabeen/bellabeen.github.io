@@ -24,7 +24,6 @@ Sudah lama tidak menulis lagi. Pada kesempatan kali ini saya mau bahas membuat n
 Hasilnya
 ![Markdowm Image][1]
 <figcaption class="caption">Send Notifikasi Slack</figcaption>
-{% highlight raw %}
 
 Untuk otomasisasi sesuai dengan schedule bisa gunakan cronjob untuk *triggered* file tersebut
 
