@@ -11,7 +11,7 @@ author: bellabeen
 ---
 
 Hai apakabar? 
-Sudah lama tidak menulis lagi. Pada kesempatan kali ini saya mau bahas membuat notifikasi yang langsung dipush langsung ke slack menggunakan webhook. 
+Sudah lama tidak menulis lagi. Pada kesempatan kali ini saya mau bahas membuat notifikasi yang langsung dipush langsung ke slack menggunakan webhook. Untuk penjelasan apa itu slack, webhook bisa disearch ya atau next time akan kita bahass
 
 1. Pastikan kalian sudah punya akun slack 
 2. Pastikan kalian punya workspace yang ingin dipush dinotifikasinya
@@ -21,6 +21,17 @@ Sudah lama tidak menulis lagi. Pada kesempatan kali ini saya mau bahas membuat n
 
 
 {% gist bellabeen/078a4aba35a50206da1e2073615904db %}
+
+Hasilnya
+![Markdowm Image][1]
+<figcaption class="caption">Send Notifikasi Slack</figcaption>
+{% highlight raw %}
+
+![Markdowm Image][/assets/send-notif-mft.jpeg]
+<figcaption class="caption">Send Notifikasi Slack Webhook</figcaption>
+{% endhighlight %}
+
+[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/blade/1.pngs
 
 Oke mungkin sekian kalau ada pertanyaan atau bingung kalian bisa chat saya di <https://t.me/bellabeen>
 
