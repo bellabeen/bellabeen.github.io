@@ -31,7 +31,7 @@ Hasilnya
 <figcaption class="caption">Send Notifikasi Slack Webhook</figcaption>
 {% endhighlight %}
 
-[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/tutorial-laravel/blade/1.pngs
+[1]: https://raw.githubusercontent.com/bellabeen/bellabeen.github.io/master/assets/images/send-notif-mft.jpeg
 
 Oke mungkin sekian kalau ada pertanyaan atau bingung kalian bisa chat saya di <https://t.me/bellabeen>
 
