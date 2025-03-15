@@ -1,6 +1,6 @@
 ---
 title: How to Install Cloudwatch Agent AWS on Linux
-date: 2025-03-14 18:03:30 +0700
+date: 2025-03-15 9:20:30 +0700
 categories: [aws, ec2]
 tags: [cloud, infrastructure]     # TAG names should always be lowercase
 ---
