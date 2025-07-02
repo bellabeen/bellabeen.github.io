@@ -1,6 +1,6 @@
 ---
 title: How to Setup Password Authentication For AWS EC2 Instances
-date: 2025-03-14 16:55:30 +0700
+date: 2025-07-03 09:55:30 +0700
 categories: [aws, ec2]
 tags: [cloud, infrastructure]     # TAG names should always be lowercase
 ---
