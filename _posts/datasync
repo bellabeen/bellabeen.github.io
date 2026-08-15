@@ -1,0 +1,58 @@
+Data sync
+1. ~ $ aws ssm get-parameter --name /aws/service/datasync/ami --region ap-southeast-1
+{
+    "Parameter": {
+        "Name": "/aws/service/datasync/ami",
+        "Type": "String",
+        "Value": "ami-029a056ea9a17109a",
+        "Version": 141,
+        "LastModifiedDate": "2026-01-08T16:42:07.289000+00:00",
+        "ARN": "arn:aws:ssm:ap-southeast-1::parameter/aws/service/datasync/ami",
+        "DataType": "text"
+    }
+}
+~ $
+aws ssm get-parameter --name /aws/service/datasync/ami/v3 --region ap-southeast-1
+~ $ aws ssm get-parameter --name /aws/service/datasync/ami/v3 --region ap-southeast-1
+{
+    "Parameter": {
+        "Name": "/aws/service/datasync/ami/v3",
+        "Type": "String",
+        "Value": "ami-04d54ee658b7f4fb1",
+        "Version": 5,
+        "LastModifiedDate": "2025-12-19T15:29:32.929000+00:00",
+        "ARN": "arn:aws:ssm:ap-southeast-1::parameter/aws/service/datasync/ami/v3",
+        "DataType": "text"
+    }
+}
+~ $ 
+
+2. Install agent -> https://console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LaunchInstanceWizard:ami=ami-04d54ee658b7f4fb1
+
+https://console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LaunchInstanceWizard:ami=ami-029a056ea9a17109a
+3. Active Agent -> curl "http://agent-ip-address/?gatewayType=SYNC&activationRegion=your-region&no_redirect"
+curl "http://13.229.238.71/?gatewayType=SYNC&activationRegion=ap-southeast-1&no_redirect" ->         Activation key: HKRT3-3KCPD-K1TKG-47TL7-RADPE
+
+Activation key: CHIUG-CE3CO-91HDA-VCO8G-2LG5T
+
+curl "http://13.212.175.63/?gatewayType=SYNC&activationRegion=ap-southeast-1&no_redirect" ->         
+
+curl "http://54.151.243.222/?gatewayType=SYNC&activationRegion=ap-southeast-1&no_redirect"
+
+
+~ $ aws ssm get-parameter --name /aws/service/datasync/ami --region ap-southeast-1
+{
+    "Parameter": {
+        "Name": "/aws/service/datasync/ami",
+        "Type": "String",
+        "Value": "ami-029a056ea9a17109a",
+        "Version": 141,
+        "LastModifiedDate": "2026-01-08T16:42:07.289000+00:00",
+        "ARN": "arn:aws:ssm:ap-southeast-1::parameter/aws/service/datasync/ami",
+        "DataType": "text"
+    }
+}
+~ $ 
+https://console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LaunchInstanceWizard:ami=ami-029a056ea9a17109a
+
+I10SB-TUH8L-Q7A57-FOLPM-6K4QL
