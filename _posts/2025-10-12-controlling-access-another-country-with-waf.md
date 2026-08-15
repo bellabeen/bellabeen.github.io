@@ -1,8 +1,8 @@
 ---
 title: Controling Access Another Country With WAF
 date: 2025-10-12 9:25:30 +0700
-categories: [aws, waf]
-tags: [cloud, infrastructure]     # TAG names should always be lowercase
+categories: [aws, waf, security, portolio]
+tags: [cloud, infrastructure, portofolio]     # TAG names should always be lowercase
 ---
 
 ![TEXT](/assets/img/post/wht_theck.png)
