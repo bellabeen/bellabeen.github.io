@@ -1,7 +1,7 @@
 ---
 title: Centralize Backup Vault with AWS Backup
 date: 2026-01-16 9:25:30 +0700
-categories: [aws, backup]
+categories: [aws, backup, security, portofolio]
 tags: [cloud, infrastructure, security, portofolio]     # TAG names should always be lowercase
 ---
 
@@ -57,6 +57,7 @@ Its primary purpose is to host:
 The backup vault should be encrypted using an AWS KMS Customer Managed Key.
 
 Example CMK for Source Account (alias/example-prod-workload-cmk):
+
 This separation provides an additional security boundary.
 
 ```bash
@@ -274,6 +275,7 @@ The goal is not simply to centralize the vault, but also to ensure that workload
 ## Step 4 — Create the Customer Managed Key For Vault Account
 
 Example CMK for Source Account (alias/example-prod-workload-cmk):
+
 This separation provides an additional security boundary.
 
 ```bash
