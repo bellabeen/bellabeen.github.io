@@ -251,6 +251,16 @@ WHERE rolname = 'sampleuser';
 
 ## Sysadmin
 
+### Move Bulking File On Folder
+```bash
+find . -maxdepth 1 -type f \( -name 'QRIS-BRI-*' -o -name 'QRIS-AstraPay-*' \) -exec mv -t /sample-folder-destination/ -- {} +
+```
+
+### Count File On Folder with Prefix
+```bash
+echo "QRIS-BRI: $(find /sample-folder-source -maxdepth 1 -type f -name 'QRIS-BRI-*' | wc -l)"
+```
+
 ## Notes
 
 This page will continue to evolve as I encounter new problems, learn new technologies, and build new infrastructure. The goal is to keep these references practical, concise, and useful during troubleshooting or implementation.
