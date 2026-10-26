@@ -1,0 +1,530 @@
+---
+title: Migration Data on EFS/S3 to Another Resource EFS/S3
+date: 2025-01-20 10:03:30 +0700
+categories: [aws, efs, s3]
+tags: [cloud, infrastructure]     # TAG names should always be lowercase
+---
+
+Lambda 1
+import json
+import os
+import urllib.request
+import re
+from datetime import datetime, timedelta
+
+# Import boto3 dan inisialisasi EC2 dihapus karena sudah di-handle oleh Lambda Control
+
+def lambda_handler(event, context):
+    bot_token = os.environ['BOT_TOKEN']
+    chat_id = os.environ['CHAT_ID']
+    # THREAD_ID ini diisi dengan ID dari Topik "Alarm HOKI TDM"
+    thread_id = os.environ.get('THREAD_ID') 
+    
+    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+
+    try:
+        alarm_data = event.get('alarmData', {})
+        # Tambahan replace untuk mencegah Error 400 karena format Markdown Telegram
+        alarm_name = alarm_data.get('alarmName', 'Unknown Alarm').replace('_', '\\_')
+        
+        state_data = alarm_data.get('state', {})
+        new_state = state_data.get('value', 'UNKNOWN')
+        raw_reason = state_data.get('reason', 'Tidak ada detail')
+        
+        # --- BLOK KONVERSI WAKTU UTC KE WIB ---
+        def convert_to_wib(match):
+            utc_time_str = match.group(1)
+            try:
+                utc_time = datetime.strptime(utc_time_str, '%d/%m/%y %H:%M:%S')
+                wib_time = utc_time + timedelta(hours=7)
+                return wib_time.strftime('%d/%m/%y %H:%M:%S WIB')
+            except ValueError:
+                return utc_time_str
+
+        reason = re.sub(r'(\d{2}/\d{2}/\d{2}\s\d{2}:\d{2}:\d{2})', convert_to_wib, raw_reason)
+        # --------------------------------------
+
+        region = event.get('region', 'ap-southeast-1')
+        icon = "🚨" if new_state == "ALARM" else ("✅" if new_state == "OK" else "⚠️")
+
+        text = f"{icon} *TDM CloudWatch Alert*\n\n"
+        text += f"*Alarm:* {alarm_name}\n"
+        text += f"*Status:* {new_state}\n"
+        text += f"*Region:* {region}\n"
+        text += f"*Detail:* {reason}"
+
+        payload = {
+            "chat_id": chat_id,
+            "text": text,
+            "parse_mode": "Markdown"
+        }
+        
+        if thread_id:
+            payload["message_thread_id"] = int(thread_id)
+
+        # ==============================================================
+        # BLOK TOMBOL CHATOPS TELAH DIHAPUS (Dipindah ke Lambda ke-2)
+        # ==============================================================
+
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode('utf-8'),
+            headers={'Content-Type': 'application/json'}
+        )
+
+        response = urllib.request.urlopen(req)
+        return {
+            'statusCode': response.getcode(),
+            'body': 'Alert berhasil dikirim ke grup Telegram'
+        }
+    except Exception as e:
+        print(f"Error memproses event CloudWatch: {str(e)}")
+        print("Raw event data:", json.dumps(event))
+        return {
+            'statusCode': 500,
+            'body': 'Gagal mengirim pesan'
+        }
+
+Lambda 2
+import json
+import boto3
+import os
+import urllib.request
+
+ec2 = boto3.client('ec2', region_name='ap-southeast-1')
+ssm = boto3.client('ssm', region_name='ap-southeast-1')
+
+# Konfigurasi Nama Dokumen SSM Anda
+SSM_DOCUMENT_NAME = 'TDM-Pull-Restart-Hoki'
+SSM_UPGRADE_DOCUMENT = 'TDM-Odoo-Upgrade-Module'
+
+def get_dynamic_instance_id(server_name):
+    """Mencari Instance ID berdasarkan tag Name"""
+    response = ec2.describe_instances(
+        Filters=[
+            {'Name': 'tag:Name', 'Values': [server_name]},
+            {'Name': 'instance-state-name', 'Values': ['pending', 'running', 'stopping', 'stopped']}
+        ]
+    )
+    for reservation in response['Reservations']:
+        for instance in reservation['Instances']:
+            return instance['InstanceId']
+    return None
+
+def lambda_handler(event, context):
+    try:
+        body = json.loads(event.get('body', '{}'))
+        bot_token = os.environ['BOT_TOKEN']
+        url_msg = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+        url_ans = f"https://api.telegram.org/bot{bot_token}/answerCallbackQuery"
+        
+        # ==============================================================
+        # 1. PENANGANAN TEKS PERINTAH (/menu, /deploy, /upgrade)
+        # ==============================================================
+        if 'message' in body and 'text' in body['message']:
+            message = body['message']
+            chat_id = str(message['chat']['id'])
+            text = str(message['text']).strip()
+            thread_id = message.get('message_thread_id')
+            
+            # Validasi Chat ID (Grup)
+            if chat_id != os.environ['ALLOWED_CHAT_ID']: 
+                return {'statusCode': 403, 'body': 'Ditolak'}
+            
+            # Validasi Thread ID (Topik Khusus Control)
+            allowed_thread = os.environ.get('ALLOWED_THREAD_ID')
+            if allowed_thread and str(thread_id) != allowed_thread:
+                # Mengabaikan pesan yang dikirim di luar topik "Control Hoki TDM"
+                return {'statusCode': 200, 'body': 'Beda Topik'}
+                
+            # --- FITUR: Menu Rolling Deployment ---
+            if text.startswith('/menu') or text.startswith('/deploy'):
+                cron_id = get_dynamic_instance_id('TunasHoki-Cron')
+                
+                dynamic_keyboard = [
+                    [{"text": "🚀 Deploy Cron", "callback_data": "deploy_cron"}],
+                    [{"text": "🚀 Deploy WebApp", "callback_data": "deploy_webapp"}],
+                    [{"text": "🚀 Deploy API", "callback_data": "deploy_api"}]
+                ]
+                
+                status_text = ""
+                if cron_id:
+                    try:
+                        resp = ec2.describe_instances(InstanceIds=[cron_id])
+                        server_state = resp['Reservations'][0]['Instances'][0]['State']['Name']
+                        
+                        if server_state == 'stopped':
+                            dynamic_keyboard.append([{"text": "▶️ Start Cron", "callback_data": "start_cron"}])
+                            status_icon = "🛑"
+                        elif server_state == 'running':
+                            dynamic_keyboard.append([{"text": "🔄 Restart Cron", "callback_data": "restart_cron"}])
+                            dynamic_keyboard.append([{"text": "🛑 Stop Cron", "callback_data": "stop_cron"}])
+                            status_icon = "✅"
+                        else:
+                            dynamic_keyboard.append([{"text": f"⏳ Sedang {server_state}", "callback_data": "ignore"}])
+                            status_icon = "⏳"
+                            
+                        status_text = f"\nStatus Server Cron: {status_icon} `{server_state}`"
+                    except Exception:
+                        pass
+
+                payload_msg = {
+                    "chat_id": chat_id,
+                    "text": f"🛠️ *TDM Command Center*{status_text}\nSilakan pilih target server:",
+                    "parse_mode": "Markdown",
+                    "reply_markup": {"inline_keyboard": dynamic_keyboard}
+                }
+                if thread_id: payload_msg["message_thread_id"] = thread_id
+                urllib.request.urlopen(urllib.request.Request(url_msg, data=json.dumps(payload_msg).encode('utf-8'), headers={'Content-Type': 'application/json'}))
+            
+            # --- FITUR BARU: Odoo Module Upgrade ---
+            elif text.startswith('/upgrade '):
+                module_name = text.split('/upgrade ', 1)[1].strip()
+                
+                try:
+                    response = ssm.send_command(
+                        Targets=[{'Key': 'tag:Name', 'Values': ['TunasHoki-Cron']}],
+                        DocumentName=SSM_UPGRADE_DOCUMENT, 
+                        Parameters={'ModuleName': [module_name]},
+                        Comment=f'Upgrade module {module_name} via Telegram'
+                    )
+                    
+                    msg = (f"📦 *Otomatisasi Upgrade Dimulai!*\n"
+                           f"Modul: `{module_name}`\n"
+                           f"Target: `TunasHoki-Cron`\n"
+                           f"Command ID: `{response['Command']['CommandId']}`\n\n"
+                           f"_Silakan tunggu status Success di AWS. Jika sudah selesai, panggil /menu untuk deploy WebApp & API._")
+                    
+                except Exception as e:
+                    msg = f"❌ *Gagal eksekusi upgrade:*\n`{str(e)}`"
+                
+                payload_msg = {"chat_id": chat_id, "text": msg, "parse_mode": "Markdown"}
+                if thread_id: payload_msg["message_thread_id"] = thread_id
+                urllib.request.urlopen(urllib.request.Request(url_msg, data=json.dumps(payload_msg).encode('utf-8'), headers={'Content-Type': 'application/json'}))
+                
+            return {'statusCode': 200, 'body': 'OK'}
+
+        # ==============================================================
+        # 2. PENANGANAN KLIK TOMBOL (CALLBACK QUERY)
+        # ==============================================================
+        elif 'callback_query' in body:
+            callback = body['callback_query']
+            chat_id = str(callback['message']['chat']['id'])
+            data = callback['data']
+            callback_id = callback['id']
+            thread_id = callback['message'].get('message_thread_id')
+            
+            # Validasi Chat ID (Grup)
+            if chat_id != os.environ['ALLOWED_CHAT_ID']: 
+                return {'statusCode': 403, 'body': 'Ditolak'}
+            
+            # Validasi Thread ID (Topik Khusus Control)
+            allowed_thread = os.environ.get('ALLOWED_THREAD_ID')
+            if allowed_thread and str(thread_id) != allowed_thread:
+                return {'statusCode': 200, 'body': 'Beda Topik'}
+            
+            def send_reply(text_msg, popup_msg):
+                payload_msg = {"chat_id": chat_id, "text": text_msg, "parse_mode": "Markdown"}
+                if thread_id: payload_msg["message_thread_id"] = thread_id
+                try: urllib.request.urlopen(urllib.request.Request(url_msg, data=json.dumps(payload_msg).encode('utf-8'), headers={'Content-Type': 'application/json'}))
+                except Exception: pass
+                try: urllib.request.urlopen(urllib.request.Request(url_ans, data=json.dumps({"callback_query_id": callback_id, "text": popup_msg}).encode('utf-8'), headers={'Content-Type': 'application/json'}))
+                except Exception: pass
+
+            deploy_targets = {
+                "deploy_cron": "TunasHoki-Cron",
+                "deploy_webapp": "TDM-TunasHoki-WebApp",
+                "deploy_api": "TDM-TunasHoki-API"
+            }
+
+            if data in deploy_targets:
+                target_tag = deploy_targets[data]
+                try:
+                    response = ssm.send_command(
+                        Targets=[{'Key': 'tag:Name', 'Values': [target_tag]}],
+                        DocumentName=SSM_DOCUMENT_NAME,
+                        Comment=f'Telegram ChatOps Deploy to {target_tag}'
+                    )
+                    send_reply(f"🚀 *Deployment Dimulai!*\nTarget: `{target_tag}`\nSSM Command ID: `{response['Command']['CommandId']}`", f"Deploying {target_tag}...")
+                except Exception as e:
+                    send_reply(f"❌ *Gagal Deploy ke {target_tag}:*\n`{str(e)}`", "Gagal SSM!")
+                return {'statusCode': 200, 'body': 'OK'}
+
+            if data in ["start_cron", "stop_cron", "restart_cron"]:
+                active_instance_id = get_dynamic_instance_id("TunasHoki-Cron")
+                if not active_instance_id:
+                    send_reply("❌ *Gagal:* Server Cron tidak ditemukan!", "Not Found")
+                    return {'statusCode': 200, 'body': 'OK'}
+
+                try:
+                    resp = ec2.describe_instances(InstanceIds=[active_instance_id])
+                    current_state = resp['Reservations'][0]['Instances'][0]['State']['Name']
+
+                    if data == "start_cron":
+                        if current_state == 'running': send_reply("ℹ️ Cron sudah HIDUP.", "Sudah hidup!")
+                        else:
+                            ec2.start_instances(InstanceIds=[active_instance_id])
+                            send_reply(f"▶️ Menghidupkan Cron\nID: `{active_instance_id}`", "Starting...")
+                            
+                    elif data == "stop_cron":
+                        if current_state == 'stopped': send_reply("ℹ️ Cron sudah MATI.", "Sudah mati!")
+                        else:
+                            ec2.stop_instances(InstanceIds=[active_instance_id])
+                            send_reply(f"🛑 Mematikan Cron\nID: `{active_instance_id}`", "Stopping...")
+                            
+                    elif data == "restart_cron":
+                        if current_state != 'running': send_reply("❌ Cron harus HIDUP untuk di-Restart.", "Gagal!")
+                        else:
+                            ec2.reboot_instances(InstanceIds=[active_instance_id])
+                            send_reply(f"✅ Me-restart Cron\nID: `{active_instance_id}`", "Restarting...")
+
+                except Exception as e:
+                    if 'IncorrectInstanceState' in str(e): send_reply("⏳ Server masih transisi. Tunggu 1 menit.", "Transisi!")
+                    else: send_reply(f"❌ *Error EC2:*\n`{str(e)}`", "Error!")
+
+        return {'statusCode': 200, 'body': 'OK'}
+    except Exception as e:
+        print(f"Error: {e}")
+        return {'statusCode': 500, 'body': 'Error'}
+
+
+SSM -> Document -> Upgrade module
+schemaVersion: '2.2'
+description: 'Otomatisasi Pull, Update Aurora DB, dan Auto-Monitor Odoo'
+parameters:
+  ModuleName:
+    type: String
+    description: "Nama module teknis yang akan diupgrade"
+mainSteps:
+- action: aws:runShellScript
+  name: upgradeAndMonitor
+  inputs:
+    runCommand:
+    - "#!/bin/bash"
+    - "sudo su - ubuntu << 'EOF'"
+    - "cd /opt/tdm_hoki_code/odoo/custom-addons/addons-test"
+    - "export AWS_SHARED_CREDENTIALS_FILE=/dev/null"
+    - "export AWS_ACCESS_KEY_ID="
+    - "export AWS_SECRET_ACCESS_KEY="
+    - "# 1. Pull Git dengan SSH Key Ephemeral"
+    - "aws ssm get-parameter --region ap-southeast-1 --name \"/tdm/github_tdm_hoki\" --with-decryption --query \"Parameter.Value\" --output text > /tmp/ephemeral_deploy_key"
+    - "chmod 600 /tmp/ephemeral_deploy_key"
+    - "export GIT_SSH_COMMAND=\"ssh -i /tmp/ephemeral_deploy_key -o StrictHostKeyChecking=no\""
+    - "sudo -E git pull git@github.com:tunasgroup/tdm_hoki_addons.git master"
+    - "rm -f /tmp/ephemeral_deploy_key"
+    - "sudo systemctl restart odoo10.service"
+    - "EOF"
+    - ""
+    - "# 2. Konfigurasi Aurora PostgreSQL (Silakan ubah Host dan DB Name)"
+    - "DB_HOST='tdm-tunashoki.cswqm0yywcis.ap-southeast-1.rds.amazonaws.com'"
+    - "DB_NAME='hoki'"
+    - ""
+    - "# Ambil User dan Password dari brankas AWS secara on-the-fly"
+    - "export DB_USER=$(aws ssm get-parameter --region ap-southeast-1 --name \"/tdm/hoki_db_user\" --with-decryption --query \"Parameter.Value\" --output text)"
+    - "export PGPASSWORD=$(aws ssm get-parameter --region ap-southeast-1 --name \"/tdm/hoki_db_password\" --with-decryption --query \"Parameter.Value\" --output text)"
+    - ""
+    - "# 3. Eksekusi Query Update ke Aurora"
+    - "psql -h $DB_HOST -U $DB_USER -d $DB_NAME -c \"UPDATE ir_module_module SET state = 'to upgrade' WHERE name = '{{ModuleName}}';\""
+    - ""
+    - "# 4. Restart kedua untuk memicu instalasi/upgrade Odoo"
+    - "sudo systemctl restart odoo10.service"
+    - ""
+    - "# 5. Smart Monitoring: Looping terus menerus sampai state bersih di Aurora"
+    - "echo 'Memantau Aurora, menunggu Odoo menyelesaikan upgrade module: {{ModuleName}}...'"
+    - "while [ $(psql -h $DB_HOST -U $DB_USER -d $DB_NAME -t -A -c \"SELECT count(*) FROM ir_module_module WHERE state LIKE 'to up%';\") -gt 0 ]; do"
+    - "  sleep 5"
+    - "done"
+    - "echo 'Upgrade selesai! Semua state sudah bersih.'"
+    - ""
+    - "# Bersihkan memori kredensial"
+    - "unset PGPASSWORD"
+    - "unset DB_USER"
+
+Create Paramter Store
+/tdm/github_tdm_hoki -> SSH Key repo
+/tdm/hoki_db_password -> DB Password
+/tdm/hoki_db_user -> DB User
+
+
+Pull Restart server without upgrade module use Document -> Parameter Store
+schemaVersion: '2.2'
+description: 'Pull dan Restart Hoki TDM (Ephemeral SSH Key via AWS CLI)'
+mainSteps:
+- action: aws:runShellScript
+  name: runUpdateScript
+  inputs:
+    runCommand:
+    - "#!/bin/bash"
+    - "sudo su - ubuntu << 'EOF'"
+    - ""
+    - "cd /opt/tdm_hoki_code/odoo/custom-addons/addons-test"
+    - "sudo git config --global --add safe.directory /opt/tdm_hoki_code/odoo/custom-addons/addons-test"
+    - ""
+    - "# 1. Bypass kredensial s3-backup lokal dan paksa CLI menggunakan EC2SSMRole"
+    - "export AWS_SHARED_CREDENTIALS_FILE=/dev/null"
+    - "export AWS_ACCESS_KEY_ID="
+    - "export AWS_SECRET_ACCESS_KEY="
+    - ""
+    - "# 2. Ambil Private Key dari brankas AWS dan simpan ke file sementara (Hit)"
+    - "aws ssm get-parameter --region ap-southeast-1 --name \"/tdm/github_tdm_hoki\" --with-decryption --query \"Parameter.Value\" --output text > /tmp/ephemeral_deploy_key"
+    - "chmod 600 /tmp/ephemeral_deploy_key"
+    - ""
+    - "# 3. Paksa Git untuk memakai kunci sementara ini tanpa prompt yes/no"
+    - "export GIT_SSH_COMMAND=\"ssh -i /tmp/ephemeral_deploy_key -o StrictHostKeyChecking=no\""
+    - "sudo -E git pull git@github.com:tunasgroup/tdm_hoki_addons.git master"
+    - ""
+    - "# 4. Bakar/hapus jejak kunci dari server (Run)"
+    - "rm -f /tmp/ephemeral_deploy_key"
+    - ""
+    - "# 5. Restart service"
+    - "sudo systemctl restart odoo10.service"
+    - ""
+    - "EOF"
+
+
+
+
+# Multi Pull System
+#!/bin/bash
+exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
+
+# --- FIX HEADLESS ENVIRONMENT ---
+export HOME=/root
+
+echo "Memulai otomatisasi Git Pull Odoo via SSH Deploy Key..."
+
+AWS_REGION="ap-southeast-1"
+# Set direktori SSH untuk user ubuntu dan root
+UBUNTU_SSH_DIR="/home/ubuntu/.ssh"
+GITHUB_KEY_PATH="$UBUNTU_SSH_DIR/id_rsa_github"
+
+ROOT_SSH_DIR="/root/.ssh"
+ROOT_KEY_PATH="$ROOT_SSH_DIR/id_rsa_github"
+
+# ==========================================
+# KONFIGURASI APLIKASI
+# Format: "DIREKTORI;BRANCH;REPO_URL;NAMA_SERVICE"
+# ==========================================
+APPS=(
+    "/opt/tmp/custom_addons/teto-staging-it;teto;git@github.com:tunasgroup/tdm_teto.git;teds2-staging-it.service"
+)
+
+# 1. Menyiapkan Direktori SSH untuk Ubuntu
+mkdir -p "$UBUNTU_SSH_DIR"
+
+echo "Mengambil SSH Deploy Key dari Parameter Store..."
+aws ssm get-parameter \
+    --name "/odoo/github_deploy_key" \
+    --with-decryption \
+    --query "Parameter.Value" \
+    --output text \
+    --region $AWS_REGION > "$GITHUB_KEY_PATH"
+
+if [ ! -s "$GITHUB_KEY_PATH" ]; then
+    echo "ERROR: Gagal mengambil SSH Key dari SSM. Proses dibatalkan."
+    exit 1
+fi
+
+# Mengatur permission file kunci SSH Ubuntu
+chmod 600 "$GITHUB_KEY_PATH"
+
+# Membuat konfigurasi SSH agar otomatis menggunakan kunci ini untuk GitHub (Ubuntu)
+cat <<EOF > "$UBUNTU_SSH_DIR/config"
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile $GITHUB_KEY_PATH
+    StrictHostKeyChecking no
+EOF
+chmod 600 "$UBUNTU_SSH_DIR/config"
+
+# Rapikan kepemilikan agar user ubuntu bisa menggunakannya saat login manual
+chown -R ubuntu:ubuntu "$UBUNTU_SSH_DIR"
+
+
+# 1b. Menyiapkan Direktori SSH untuk Root
+echo "Mengonfigurasi SSH Deploy Key untuk user root..."
+mkdir -p "$ROOT_SSH_DIR"
+cp "$GITHUB_KEY_PATH" "$ROOT_KEY_PATH"
+chmod 600 "$ROOT_KEY_PATH"
+
+cat <<EOF > "$ROOT_SSH_DIR/config"
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile $ROOT_KEY_PATH
+    StrictHostKeyChecking no
+EOF
+chmod 600 "$ROOT_SSH_DIR/config"
+
+
+# 1c. Mendaftarkan Folder EFS ke daftar Aman
+echo "Mendaftarkan folder EFS ke safe directory untuk root dan ubuntu..."
+git config --global --add safe.directory /opt/tdm_teds2_code/odoo/custom-addons/teto-staging-it
+sudo -u ubuntu git config --global --add safe.directory /opt/tdm_teds2_code/odoo/custom-addons/teto-staging-it
+
+
+# 2. Looping Eksekusi Aplikasi
+for app in "${APPS[@]}"; do
+    IFS=";" read -r DIR BRANCH REPO SERVICE <<< "$app"
+    
+    echo "---------------------------------------------------"
+    echo "Memproses Service : $SERVICE"
+    echo "Target Direktori  : $DIR"
+    
+    if [ ! -d "$DIR" ]; then
+        echo "WARNING: Direktori $DIR tidak ditemukan! Melewati eksekusi service ini..."
+        continue
+    fi
+
+    cd "$DIR"
+
+    # Ubah kepemilikan direktori menjadi ubuntu SEBELUM perintah git
+    echo "Menyesuaikan hak akses direktori untuk user ubuntu..."
+    chown -R ubuntu:ubuntu "$DIR"
+    
+    # Daftarkan direktori agar aman dieksekusi git (untuk user ubuntu juga)
+    git config --global --add safe.directory "$DIR"
+    sudo -u ubuntu git config --global --add safe.directory "$DIR"
+    
+    # Pastikan URL remote origin diset ke SSH agar pull manual tidak minta token
+    sudo -u ubuntu git remote set-url origin "$REPO"
+    
+    echo "Menarik kode terbaru dari branch $BRANCH..."
+    # Eksekusi git pull sebagai user ubuntu memanfaatkan config SSH yang sudah dibuat
+    sudo -u ubuntu git pull origin "$BRANCH"
+    
+    echo "Me-restart Service $SERVICE..."
+    systemctl restart "$SERVICE"
+    
+    echo "[SUKSES] $SERVICE selesai diproses!"
+done
+
+echo "---------------------------------------------------"
+echo "Proses otomatisasi User Data selesai sepenuhnya!"
+
+#PULL Restart with SSM -> Document
+schemaVersion: '2.2'
+description: 'Pull dan Restart Staging IT (Replikasi Mekanisme Manual)'
+mainSteps:
+- action: aws:runShellScript
+  name: runUpdateScript
+  inputs:
+    runCommand:
+    - "#!/bin/bash"
+    - "# 2. Masuk ke user ubuntu dan eksekusi perintah di bawahnya hingga batas EOF"
+    - "sudo su - ubuntu << 'EOF'"
+    - ""
+    - "# 3. Pindah directory"
+    - "cd /opt/tmp/custom_addons/teto-staging-it"
+    - ""
+    - "# (Tambahan wajib agar tidak muncul error dubious ownership)"
+    - "sudo git config --global --add safe.directory /opt/tmp/custom_addons/teto-staging-it"
+    - ""
+    - "# 4. Pull code"
+    - "sudo git pull origin teto"
+    - ""
+    - "# 5. Restart service"
+    - "sudo systemctl restart teds2-staging-it.service"
+    - ""
+    - "EOF"

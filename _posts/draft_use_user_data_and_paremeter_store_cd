@@ -1,0 +1,99 @@
+---
+title: Migration Data on EFS/S3 to Another Resource EFS/S3
+date: 2025-01-20 10:03:30 +0700
+categories: [aws, efs, s3]
+tags: [cloud, infrastructure]     # TAG names should always be lowercase
+---
+
+Create Parameter Store
+/odoo/github_deploy_key
+Key dari github user
+
+Create User Data on ASG for Launch Template
+#!/bin/bash
+exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
+echo "Memulai otomatisasi inisialisasi instance Web App (Tagging, Hostname, dan Git Pull Odoo)..."
+
+# ==========================================
+# CONFIGURATION VARIABLES
+# ==========================================
+ADDONS_DIR="/opt/tmp/custom-addons/tdm_teds_addons"           
+BRANCH_NAME="master"                                     
+REPO_URL="git@github.com:tunasgroup/tdm_teds_addons.git" 
+SERVICE_NAME="odoo.service" 
+NEW_HOSTNAME="teds-tdm-webapp"
+# ==========================================
+
+# --- LANGKAH 1: KONFIGURASI HOSTNAME ---
+echo "Mengonfigurasi Hostname menjadi $NEW_HOSTNAME..."
+hostnamectl set-hostname "$NEW_HOSTNAME"
+echo "$NEW_HOSTNAME" > /etc/hostname
+
+# --- LANGKAH 2: RETRIEVE INSTANCE METADATA (FIX IMDSv2) ---
+echo "Mengambil nilai AWS Metadata menggunakan Token IMDSv2..."
+TOKEN=$(curl -s -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+
+AWS_AVAIL_ZONE=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/placement/availability-zone)
+AWS_REGION=$(echo "$AWS_AVAIL_ZONE" | sed 's/[a-z]$//')
+AWS_INSTANCE_ID=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/instance-id)
+
+if [ -z "$AWS_REGION" ]; then
+    AWS_REGION="ap-southeast-1"
+fi
+
+# --- LANGKAH 3: TAGGING ROOT VOLUME EBS ---
+echo "Mencari Root Volume ID untuk Instance $AWS_INSTANCE_ID..."
+if [ -n "$AWS_INSTANCE_ID" ]; then
+    ROOT_VOLUME_IDS=$(aws ec2 describe-instances \
+        --region "$AWS_REGION" \
+        --instance-id "$AWS_INSTANCE_ID" \
+        --output text \
+        --query 'Reservations[0].Instances[0].BlockDeviceMappings[0].Ebs.VolumeId')
+
+    if [ -n "$ROOT_VOLUME_IDS" ]; then
+        echo "Menerapkan Corporate Tags pada Volume Web App: $ROOT_VOLUME_IDS"
+        aws ec2 create-tags --resources "$ROOT_VOLUME_IDS" --region "$AWS_REGION" --tags \
+          Key=Name,Value=TEDS-TDM-Web-Working \
+          Key=tunas:env,Value=prod \
+          Key=tunas:application-id,Value=TEDS \
+          Key=tunas:cost-center,Value=TDM
+    else
+        echo "WARNING: Gagal mendapatkan Volume ID. Proses tagging dilewati."
+    fi
+else
+    echo "ERROR: Instance ID tetap kosong. Tagging dilewati."
+fi
+
+# --- LANGKAH 4: GIT PULL ODOO VIA SSH DEPLOY KEY ---
+echo "Mengambil SSH Deploy Key dari Parameter Store..."
+aws ssm get-parameter \
+    --name "/odoo/github_deploy_key" \
+    --with-decryption \
+    --query "Parameter.Value" \
+    --output text \
+    --region "$AWS_REGION" > /tmp/github_deploy_key
+
+if [ ! -s /tmp/github_deploy_key ]; then
+    echo "ERROR: Gagal mengambil SSH Key dari SSM. Proses Git Pull dibatalkan."
+    exit 1
+fi
+
+chmod 600 /tmp/github_deploy_key
+
+cd "$ADDONS_DIR" || { echo "ERROR: Direktori $ADDONS_DIR tidak ditemukan"; exit 1; }
+echo "Menarik kode terbaru dari branch $BRANCH_NAME..."
+export GIT_SSH_COMMAND="ssh -i /tmp/github_deploy_key -o StrictHostKeyChecking=no"
+git pull "$REPO_URL" "$BRANCH_NAME"
+
+rm /tmp/github_deploy_key
+
+# --- LANGKAH 5: REFRESH WORKSPACE & RESTART SERVICE ---
+echo "Merapikan kepemilikan file ke user ubuntu..."
+chown -R ubuntu:ubuntu "$ADDONS_DIR"
+
+echo "Me-restart service Odoo ($SERVICE_NAME)..."
+systemctl restart "$SERVICE_NAME"
+
+echo "Proses otomatisasi User Data selesai sepenuhnya!"
+
+
